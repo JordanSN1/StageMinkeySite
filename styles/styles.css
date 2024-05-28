@@ -3311,24 +3311,43 @@ h3{
 
 /* Bloc CTA-BLOG */
 
+form, input {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: none;
+    font: inherit;
+    color: inherit;
+    box-shadow: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+
+input:valid {
+    background-color: #E3CAFF;
+}
+
 .CTA-BLOG{
     background-color: #E3CAFF;
-    padding: 50px;
-    height: 44vh;
+    padding: 45px;
+    height: 40vh;
     margin-top: 50px;
     border-radius: 12px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin: 6vh 1vh 2vh;
+    margin: 6vh 20vh 6vh;
 }
 
 .CTA-BLOG img{
-    width: 280px;
+    width: 240px;
     height: auto;
     margin-right: 8vh;
-    margin-left: 5vh;
+    margin-left: 0vh;
     margin-top: 1vh;
 }
 
@@ -3351,57 +3370,29 @@ h3{
   
   /* Button Styles */
   .CTA-BLOG .buttonCTA-BLOG {
-    display: inline-block;
-    padding: 10px 20px;
+    padding: 14px 20px;
     margin-top: 2vh;
+    margin-left: 1vw;
     border-radius: 15px;
-    color: #1A3928;
+    color: #E3CAFF;
+    cursor: pointer;
     text-transform: uppercase;
     font-family: "Inter", sans-serif;
     font-weight: 700;
     font-size: 18px;
     text-decoration: none;
     border: #1A3928 2px solid;
-    background-color: #E3CAFF;
+    background-color: #1A3928;
     transition: all 0.3s;
     position: relative;
-    overflow: hidden;
     z-index: 1;
   }
-  
-  .CTA-BLOG .buttonCTA-BLOG:after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: var(--primary-color);
-    border-radius: 15px;
-    z-index: -2;
-  }
-  
-  .CTA-BLOG .buttonCTA-BLOG:before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0%;
-    height: 100%;
-    background-color: var(--primary-color-darken);
-    transition: all 0.4s;
-    border-radius: 15px;
-    z-index: -1;
-  }
-  
-  .CTA-BLOG .buttonCTA-BLOG:hover {
-    color: #E3CAFF;
-    background-color: #1A3928;
-  }
-  
-  .CTA-BLOG .buttonCTA-BLOG:hover:before {
-    width: 100%;
-  }
+
+  .buttonCTA-BLOG:hover {
+    color: #1A3928;
+    background-color: #E3CAFF;
+    transform: scale(1.05);
+   }
 
 
   #articleContainer-blog{
@@ -3429,4 +3420,362 @@ h3{
   .ButtonMore-Blog a{
     color: #FFF;
     text-decoration: none;
+}
+
+
+
+.form-container {
+    background-color: #d8a9f5; /* Adjusted to match the form background color */
+    padding: 40px;
+    border-radius: 20px; /* Adjusted for rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+}
+
+
+.MailForm {
+    width: 25vw;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 2px solid #1A3928; /* Adjusted for black border */
+    border-radius: 15px; 
+    background-color: #E3CAFF;
+    font-size: 16px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+
+   /**Page princip le blog**/
+   .blog_body {
+    background-color: #F8F2FF;
+}
+
+.Container-blog {
+    width: 100%;
+    height: 60vh;
+}
+
+.ressources {
+    font-family: Sansita, sans-serif;
+    font-size: 17px;
+    font-weight: 900;
+}
+
+
+.blog-title {
+    font-weight: 900;
+    font-size: 64px;
+    margin-bottom: -2vh;
+}
+
+.blog-title2 {
+    font-weight: 900;
+    font-size: 64px;
+}
+
+.blog-ligne1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.blog {
+    width: 40vw;
+}
+
+.blog-colonne1 {
+    width: 37%;
+    margin-left: 20vw;
+    margin-top: 12vh;
+}
+
+.blog-title, 
+.blog-title2 {
+  font-size: 2.8vw;
+  font-family: Sansita, sans-serif;
+}
+
+.blog-colonne2 {
+    width: 20%;
+}
+
+.blog-img1 {
+    background-color: #f8f2ff;
+}
+
+.blog-img1{
+    width: 30vw;
+    height: 29vh;
+    background-color: royalblue;
+    border-radius: 34px;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-top: 8vh;
+    margin-left: 3vw
+}
+
+
+.blog-ligne2 {
+    background-color: #FFF;
+    height: 7vh;
+    width: 79.3vw;
+    margin-top: 7vh;
+    margin-left: 10vw;
+    border-radius: 30px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+  
+.liste-etiquettes {
+    margin-left: 5.5vw; 
+    display: flex;
+    height: 100%; 
+    list-style-type: none;
+    padding: 0;
+    Right: 0; 
+}
+  
+.liste-etiquettes li {
+    margin-top: 2.1vh;
+    font-size: 17px;
+    cursor: pointer;
+    font-weight: 700;
+    color: #1A3928;
+    padding-right: 5.2vw;
+    margin-right: 3vw;
+}
+
+    
+    /* Styles for the line under elements */
+
+.liste-etiquettes li::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2.7px;
+    background-color: #1A3928;
+    bottom: -2px;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+    
+.liste-etiquettes li:hover::after {
+    opacity: 1;
+}
+
+.Article_ligne1 {
+    background-color: #fff;
+    height: 60vh;
+    width: 79.5vw;
+    margin-left: 9.8vw;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    transition: all ease 0.3s;
+}
+
+.Article_ligne1:hover {
+    background-color: #ffffff;
+    box-shadow: 16px 20px 50px rgba(0,0,0,0.12);
+}
+
+.Article_principal {
+    width: 60%;
+}
+
+.Img_Article_principal {
+    width: 70%;
+    border-radius: 30px;
+    background-color: #1A3928;
+    margin: 1.7vw;
+}
+
+.Article_title {
+    display: flex;
+    margin: 1.3vw;
+    font-size: 36px;
+    margin-left: 2vw;
+}
+
+.resume_article {
+    margin: 1vw;
+    font-size: 18px;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+.button_type {
+    display: flex;
+    height: 2.5vw;
+    width: 10vw;
+    background-color: #1A3928;
+    margin-left: 2vw;
+    border-radius: 30px;
+    margin-top: 28vh;
+}
+
+.blog_box_container {
+    width: 26vw;
+    height: 72vh;
+    display: flex;
+    align-items: center;
+    margin-top: 6vh;
+}
+
+.Article_ligne2 {
+    width: 90.5vw;
+    margin-left: 5.8vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-right: 6vw;
+    padding-left: 4vw;
+    margin-bottom: 5vh;
+}
+
+.blog_box:hover {
+    background-color: #ffffff;
+    box-shadow: 16px 20px 50px rgba(0,0,0,0.12);
+}
+
+.blog_box {
+    width: 100%;
+    height: 72vh;
+    padding: 10px;
+    border-radius: 15px;
+    transition: all ease 0.3s;
+    background-color: #fff;
+}
+
+.blog_box_img {
+    width: 100%;
+    height: 25vh;
+    background-color: #1A3928;
+    border-radius: 15px;
+    position: relative;
+}
+
+.blog_box_text {
+    flex-direction: column;
+    padding-top: 3vh;
+    margin: 0.5vw;
+}
+
+.text_resume {
+    margin-top: 1vh;
+}
+
+strong {
+    font-size: 22px;
+}
+
+.button_type_blog {
+    display: flex;
+    height: 2.5vw;
+    width: 10vw;
+    background-color: #1A3928;
+    margin-left: 0.5vw;
+    border-radius: 15px;
+    margin-top: 15vh;
+}
+
+
+.container-BLOG{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    justify-content: space-between;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-bottom: 5vh;
+
+}
+
+
+
+
+.ArticleHeadDate-BLOG{
+    margin-left: 1.5vw;
+    margin-bottom: 5vh;
+    padding-top: 2vh;
+}
+
+.Etiquette-Article{
+    background-color: #E3CAFF;
+    color: #1A3928;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: fit-content;
+    margin-left: 1vw;
+}
+.cardArticle-BLOG{
+    margin: 1vh;
+    border-radius: 15px;
+    height: 15vh;
+}
+
+.article-container-BLOG{
+    background-color: #FFF;
+    display: flex;
+    height: 51vh;
+    flex-direction: column;
+    margin-top: 5vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    border-radius: 15px;
+}
+
+.article-link-BLOG{
+    text-decoration: none;
+    color: #FFF;
+    background-color: #1A3928;
+    padding: 10px 20px;
+    border-radius: 15px;
+    margin-left: 1vw;
+    
+}
+
+
+.article-container-Solution{
+    background-color: #E3CAFF;
+    display: flex;
+    height: 51vh;
+    flex-direction: column;
+    margin-top: 5vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    border-radius: 15px;
+}
+
+.Etiquette-Article-Solution{
+    background-color: #d8a9f5;
+    color: #1A3928;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: fit-content;
+    margin-left: 1vw;
+}
+
+.article-container-Home{
+    background-color: #E3CAFF;
+    display: flex;
+    height: 51vh;
+    flex-direction: column;
+    margin-top: 5vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    border-radius: 15px;
+}
+
+.Etiquette-Article-Home{
+    background-color: #d8a9f5;
+    color: #1A3928;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: fit-content;
+    margin-left: 1vw;
 }

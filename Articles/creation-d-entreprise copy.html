@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="Images/Disign-Minkey.png">
     <link rel="stylesheet" href="..\styles\styles.css">
-    <title>Business plan For you</title>
+    <title>Creation de son entreprise</title>
 </head>
 <body>
     <!-- Loading page-->
@@ -27,9 +27,7 @@
     
             
     </script>
-    <!--Bloc Presentation-->
-
-
+    
     
     <!-- Navbar -->
     <nav class = 'Navbar'>
@@ -68,7 +66,6 @@
         <img class="Visuel-Article" src="..\Images\Fond-jungle.png" alt="Visuel-Article">
         <div class="Visual-title">Business Plan toute les infos clés</div>
     </div>
-
     <div class="all-content">
         <div class="Main-content">
             <h1 class="Article-title">Business plan : que doit-il impérativement contenir et comment le réussir ?</h1>
@@ -116,100 +113,10 @@
                         <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://minkey.fr/&title=Minkey" target="_blank"><img class="Share-image Linkedin-IMG" src="..\Images\icons\linkedin.svg" alt="linkedin"></a>
                     </div>  
             </div>
-
-
-
-
-    </div>
-    <div class="BandeauArticle">
-        <span class="minkey-blog">Retrouvez des articles similaire</span>
-    </div>
-        <div id="articleContainer-blog" class="container"></div>
-        <div class="ButtonMore-Blog"><a href="#">Voir plus</a></div>
-            <script>
-                document.addEventListener("DOMContentLoaded", function() {
-                // Récupérer le conteneur des articles
-                const articleContainer = document.getElementById('articleContainer-blog');
-        
-                // Récupérer la liste des fichiers d'articles
-                fetchArticleFiles()
-                    .then(articleFiles => {
-                    // Charger chaque article et générer les cartes
-                    articleFiles.forEach(articleFile => {
-                        fetchArticleContent(articleFile)
-                        .then(articleContent => {
-                            // Extraire le titre et l'image de l'article
-                            const parser = new DOMParser();
-                            const articleHTML = parser.parseFromString(articleContent, 'text/html');
-                            const title = articleHTML.querySelector('title').innerText;
-                            const headTitle = articleHTML.querySelector('.Article-title').innerText;
-                            const headDate = articleHTML.querySelector('.Creation').innerText;
-                            const backgroundImage = articleHTML.querySelector('.Visuel-Article').src;
-                            const etiquette = articleHTML.querySelector('.Etiquette').innerText;
-        
-                            // Vérifier si l'article a la même étiquette
-                            if (etiquette === 'Création d\'entreprise') {
-                                // Créer une carte pour chaque article avec le titre et l'image de fond
-                                const cardArticle = document.createElement('div');
-                                const CardDescription = document.createElement('div');
-                                const container = document.createElement('div');
-                                container.classList.add('article-container');
-                                CardDescription.classList.add('CardDescription');
-                                cardArticle.classList.add('cardArticle');
-                                cardArticle.style.backgroundImage = `url("${backgroundImage}")`;
-                                cardArticle.innerHTML = `<a href="../Articles/${articleFile}" class="article-link"><h2 class="CardTitle">${title}</h2></a>`;
-                                CardDescription.innerHTML = `<h3 class="ArticleHeadTitle">${headTitle}</h2><p class="ArticleHeadDate">${headDate}</p>`;
-                                container.appendChild(cardArticle);
-                                container.appendChild(CardDescription);
-                                articleContainer.appendChild(container);
-                            }
-                        })
-                        .catch(error => console.error('Erreur de chargement de l\'article:', error));
-                    });
-                    })
-                    .catch(error => console.error('Erreur de chargement des fichiers d\'articles:', error));
-                });
-        
-                // Fonction pour récupérer la liste des fichiers d'articles
-                function fetchArticleFiles() {
-                return fetch('../articles/')
-                    .then(response => response.text())
-                    .then(text => {
-                    const parser = new DOMParser();
-                    const htmlDocument = parser.parseFromString(text, 'text/html');
-                    const links = htmlDocument.querySelectorAll('a');
-                    const articleFiles = [];
-                    links.forEach(link => {
-                        if (link.href.endsWith('.html')) {
-                        articleFiles.push(link.href.split('/').pop());
-                        }
-                    });
-                    return articleFiles;
-                    });
-                }
-        
-                // Fonction pour charger le contenu HTML d'un article
-                function fetchArticleContent(articleFile) {
-                return fetch(`../articles/${articleFile}`) // Assurez-vous que le chemin est correct
-                    .then(response => response.text());
-                }
-        
-            </script>
-
+            </div>
         </div>
-    </div>
-
-    <div class="CTA-BLOG">
-        <img src="../Images/Logo-Minkey-App-Green-RVB.png" alt="#">
-        <div class="container-CTA-BLOG">
-            <h2 class="Titre-CTA-BLOG">Restez informé-e-s !</h2>
-            <form id="newsletter-form" method="POST">
-                <input class="MailForm" type="email" name="email" placeholder="Adresse e-mail">
-                <input type="submit" value="S'inscrire" class="buttonCTA-BLOG">
-            </form>
-        </div>
-    </div>
     
+    </div>
     
     <!-- Footer -->
     <footer>

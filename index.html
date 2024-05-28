@@ -35,17 +35,17 @@
     <nav class = 'Navbar'>
         <ul class="Sidebar">
             <li class="HideSidebar" onclick="HideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li> <br> <br>
-            <li class="Nav-List1"><a class="links" href="solution.html">Solution</a></li> <br>
-            <li class="Nav-List1"><a class="links" href="Minkey.html">Minkey</a></li> <br>
-            <li class="Nav-List1"><a class="links" href="blog.html">Le blog</a></li> <br>
-            <li class="Nav-List1"><a class="links" href="Partenaire.html">Partenaires</a></li> <br>
+            <li class="Nav-List1"><a class="links" href="..\Pages\solution.html">Solution</a></li> <br>
+            <li class="Nav-List1"><a class="links" href="..\Pages\Minkey.html">Minkey</a></li> <br>
+            <li class="Nav-List1"><a class="links" href="..\Pages\blog.html">Le blog</a></li> <br>
+            <li class="Nav-List1"><a class="links" href="..\Pages\Partenaire.html">Partenaires</a></li> <br>
         </ul>
         <ul class="Nav-container">
             <li class="list-image"><a href="index.html"><img class="HomeImage" src="Images\Logo-Minkey-Green-RVB.png" alt="HomeImage"></a></li>
-            <li class="Nav-List"><a class="links" href="solution.html">Solution</a></li>
-            <li class="Nav-List"><a class="links" href="Minkey.html">Minkey</a></li>
-            <li class="Nav-List"><a class="links" href="blog.html">Le blog</a></li>
-            <li class="Nav-List"><a class="links" href="Partenaire.html">Partenaires</a></li>
+            <li class="Nav-List"><a class="links" href="..\Pages\solution.html">Solution</a></li>
+            <li class="Nav-List"><a class="links" href="..\Pages\Minkey.html">Minkey</a></li>
+            <li class="Nav-List"><a class="links" href="..\Pages\blog.html">Le blog</a></li>
+            <li class="Nav-List"><a class="links" href="..\Pages\Partenaire.html">Partenaires</a></li>
             <li class="icon" onclick="ShowSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
         </ul>
         <a class="buttonProfile" href="https://my.minkey.fr"><img class="profile" src="Images/Profile.png" alt="profile"></a>
@@ -250,44 +250,7 @@
         </li>
     </ul>
     </main>
-    <script>
-        // Alternative Versions:
-        // - Vanilla JS Version: https://codyhouse.co/demo-tutorials/stacking-cards/index.html
-        // - CSS @scroll-timeline: https://codepen.io/bramus/pen/PobmGme
-        // - JS ScrollTimeline Polyfill: https://codepen.io/bramus/pen/XWEeGZm
-        // - JS Motion One: https://codepen.io/bramus/pen/rNdzpZK 👈 = The version you are currently looking at
 
-        import { scroll, animate } from "https://cdn.skypack.dev/motion@10.13.1"
-
-        const $cardsWrapper = document.querySelector('#cards');
-        const $cards = document.querySelectorAll('.card');
-
-        const numCards = $cards.length;
-
-        $cards.forEach(($card, index0) => {
-        
-        const index = index0 + 1;
-        const reverseIndex = numCards - index0;
-        const reverseIndex0 = numCards - index;
-
-        // Extra padding per card, so you can see the other stacked cards underneath at the top
-        $card.style.paddingTop = `calc(${index} * var(--card-top-offset))`;
-        
-        // Scroll-Linked Animation
-        scroll(
-            animate($card, {
-            // Earlier cards shrink more than later cards
-            scale: [ 1, 1 - (0.1 * reverseIndex0)],
-            }), {
-            // Each card should only shrink when it’s at the top.
-            // We can’t use exit on the els for this (as they are sticky)
-            // but can track $cardsWrapper instead.
-            target: $cardsWrapper,
-            offset: [`${index0 / numCards * 100}%`, `${index / numCards * 100}%`],
-            }
-        );
-        });
-    </script>
 
 
     <!-- Bandeau Recherche Pro -->
@@ -383,7 +346,7 @@
                 <img class="img-slider" src="Images/Partenaires/logo-les-tricolores.png" alt="">
             </div>
             <div class="slide">
-                <img class="img-slider" src="Images/Partenaires/Logo-principal-Bleu-foncé-2-2.png" alt="">
+                <img class="img-slider" src="Images/Partenaires/Logo-principal-Bleu-fonce-2-2.png" alt="">
             </div>
             <div class="slide">
                 <img class="img-slider" src="Images/Partenaires/Logo_onoff_light.svg" alt="">
@@ -410,7 +373,7 @@
                 <img class="img-slider" src="Images/Partenaires/logo-les-tricolores.png" alt="">
             </div>
             <div class="slide">
-                <img class="img-slider" src="Images/Partenaires/Logo-principal-Bleu-foncé-2-2.png" alt="">
+                <img class="img-slider" src="Images/Partenaires/Logo-principal-Bleu-fonce-2-2.png" alt="">
             </div>
             <div class="slide">
                 <img class="img-slider" src="Images/Partenaires/Logo_onoff_light.svg" alt="">
@@ -427,80 +390,78 @@
         </div>
     </div>
 
-    <!-- Bandeau Articles -->
-    <div class="BandeauArticle">
-        <span class="minkey">Minkey</span><span class="blog">pédia</span>
-    </div></div>
-
-    <div id="articleContainer" class="container"></div>
-    <div class="ButtonMore"><a href="#">Voir plus</div>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-        // Récupérer le conteneur des articles
-        const articleContainer = document.getElementById('articleContainer');
-
-        // Récupérer la liste des fichiers d'articles
-        fetchArticleFiles()
-            .then(articleFiles => {
-            // Charger chaque article et générer les cartes
-            articleFiles.forEach(articleFile => {
-                fetchArticleContent(articleFile)
-                .then(articleContent => {
-                    // Extraire le titre et l'image de l'article
-                    const parser = new DOMParser();
-                    const articleHTML = parser.parseFromString(articleContent, 'text/html');
-                    const title = articleHTML.querySelector('title').innerText;
-                    const headTitle = articleHTML.querySelector('.Article-title').innerText;
-                    const headDate = articleHTML.querySelector('.Creation').innerText;
-                    const backgroundImage = articleHTML.querySelector('.Visuel-Article').src;
-
-                    // Créer une carte pour chaque article avec le titre et l'image de fond
-                    const cardArticle = document.createElement('div');
-                    const CardDescription = document.createElement('div');
-                    const container = document.createElement('div');
-                    container.classList.add('article-container');
-                    CardDescription.classList.add('CardDescription');
-                    cardArticle.classList.add('cardArticle');
-                    cardArticle.style.backgroundImage = `url("${backgroundImage}")`;
-                    cardArticle.innerHTML = `<a href="Articles/${articleFile}" class="article-link"><h2 class="CardTitle">${title}</h2></a>`;
-                    CardDescription.innerHTML = `<h3 class="ArticleHeadTitle">${headTitle}</h2><p class="ArticleHeadDate">${headDate}</p>`;
-                    container.appendChild(cardArticle);
-                    container.appendChild(CardDescription);
-                    articleContainer.appendChild(container);
-                })
-                .catch(error => console.error('Erreur de chargement de l\'article:', error));
-            });
-            })
-            .catch(error => console.error('Erreur de chargement des fichiers d\'articles:', error));
-        });
-
-        // Fonction pour récupérer la liste des fichiers d'articles
-        function fetchArticleFiles() {
-        return fetch('articles/')
-            .then(response => response.text())
-            .then(text => {
-            const parser = new DOMParser();
-            const htmlDocument = parser.parseFromString(text, 'text/html');
-            const links = htmlDocument.querySelectorAll('a');
-            const articleFiles = [];
-            links.forEach(link => {
-                if (link.href.endsWith('.html')) {
-                articleFiles.push(link.href.split('/').pop());
-                }
-            });
-            return articleFiles;
-            });
-        }
-
-        // Fonction pour charger le contenu HTML d'un article
-        function fetchArticleContent(articleFile) {
-        return fetch(`articles/${articleFile}`) // Assurez-vous que le chemin est correct
-            .then(response => response.text());
-        }
+     <!-- Bandeau Articles -->
 
 
-    </script>
-
+     <div id="articleContainer-BLOG" class="container-BLOG"></div>
+     <script>
+         document.addEventListener("DOMContentLoaded", function() {
+         // Récupérer le conteneur des articles
+         const articleContainer = document.getElementById('articleContainer-BLOG');
+ 
+         // Récupérer la liste des fichiers d'articles
+         fetchArticleFiles()
+             .then(articleFiles => {
+             // Charger chaque article et générer les cartes
+             articleFiles.forEach(articleFile => {
+                 fetchArticleContent(articleFile)
+                 .then(articleContent => {
+                     // Extraire le titre et l'image de l'article
+                     const parser = new DOMParser();
+                     const articleHTML = parser.parseFromString(articleContent, 'text/html');
+                     const title = articleHTML.querySelector('title').innerText;
+                     const Etiquette = articleHTML.querySelector('.Etiquette').innerText;
+                     const headTitle = articleHTML.querySelector('.Article-title').innerText;
+                     const headDate = articleHTML.querySelector('.Creation').innerText;
+                     const backgroundImage = articleHTML.querySelector('.Visuel-Article').src;
+ 
+                     // Créer une carte pour chaque article avec le titre et l'image de fond
+                     const cardArticle = document.createElement('div');
+                     const CardDescription = document.createElement('div');
+                     const container = document.createElement('div');
+                     container.classList.add('article-container-Home');
+                     CardDescription.classList.add('CardDescription-BLOG');
+                     cardArticle.classList.add('cardArticle-BLOG');
+                     cardArticle.style.backgroundImage = `url("${backgroundImage}")`;
+                     cardArticle.innerHTML = `<a href="../Articles/${articleFile}" class="article-link"><h2 class="CardTitle">${title}</h2></a>`;
+                     CardDescription.innerHTML = `<h3 class="ArticleHeadTitle">${headTitle}</h2> <p class="Etiquette-Article-Home">${Etiquette}</p> <p class="ArticleHeadDate-BLOG">${headDate}</p> <a href="../Articles/${articleFile}" class="article-link-BLOG">Lire l'article</a>`;
+                     container.appendChild(cardArticle);
+                     container.appendChild(CardDescription);
+                     articleContainer.appendChild(container);
+                 })
+                 .catch(error => console.error('Erreur de chargement de l\'article:', error));
+             });
+             })
+             .catch(error => console.error('Erreur de chargement des fichiers d\'articles:', error));
+         });
+ 
+         // Fonction pour récupérer la liste des fichiers d'articles
+         function fetchArticleFiles() {
+         return fetch('../articles/')
+             .then(response => response.text())
+             .then(text => {
+             const parser = new DOMParser();
+             const htmlDocument = parser.parseFromString(text, 'text/html');
+             const links = htmlDocument.querySelectorAll('a');
+             const articleFiles = [];
+             links.forEach(link => {
+                 if (link.href.endsWith('.html')) {
+                 articleFiles.push(link.href.split('/').pop());
+                 }
+             });
+             return articleFiles;
+             });
+         }
+ 
+         // Fonction pour charger le contenu HTML d'un article
+         function fetchArticleContent(articleFile) {
+         return fetch(`../articles/${articleFile}`) // Assurez-vous que le chemin est correct
+             .then(response => response.text());
+         }
+ 
+         
+ 
+     </script>
     
     </container>
 
