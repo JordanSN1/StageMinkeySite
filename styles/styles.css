@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap');
 
 /* Main content and css */
 *{
@@ -12,7 +12,7 @@
 body{
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 100;
+    font-weight: 400;
     font-style: normal;
     font-variation-settings:
       "slnt" 0;
@@ -181,7 +181,7 @@ body{
 
 .Nav-List .links{
     color: #1A3928;
-    letter-spacing: auto;
+    letter-spacing: .5px;
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
@@ -370,7 +370,7 @@ footer{
     font-size: 18px;
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 100;
+    font-weight: 400;
     font-style: normal;
     font-variation-settings:
       "slnt" 0;
@@ -439,7 +439,7 @@ footer{
     text-transform: none;
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 100;
+    font-weight: 400;
     font-style: normal;
     font-variation-settings:
       "slnt" 0;
@@ -532,7 +532,7 @@ footer{
     padding-top: 0px;
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 100;
+    font-weight: 400;
     font-style: normal;
     font-variation-settings:
       "slnt" 0;
@@ -577,7 +577,7 @@ footer{
     font-size: 18px;
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 100;
+    font-weight: 400;
     font-style: normal;
     font-variation-settings:
       "slnt" 0;
@@ -862,7 +862,7 @@ footer{
 .Example{
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 100    ;
+    font-weight: 400    ;
     font-variation-settings:
       "slnt" 0;
     font-size: 18px;
@@ -974,7 +974,7 @@ footer{
 }
 
 .Stat1-mobile p{
-    font-weight: 100;
+    font-weight: 400;
     font-size: 19px;
     padding-right: 20px;
     padding-left: 20px;
@@ -1063,7 +1063,7 @@ footer{
 }
 
 .Stat3-mobile p{
-    font-weight: 100;
+    font-weight: 400;
     font-size: 20px;
     color: #FFF;
     padding-left: 10px;
@@ -1142,7 +1142,7 @@ footer{
 }
 
 .Stat1 p{
-    font-weight: 100;
+    font-weight: 400;
     font-size: 22px;
     padding-right: 20px;
     margin-top: 5vh;
@@ -1206,7 +1206,7 @@ footer{
 }
 
 .Stat4 p{
-    font-weight: 100;
+    font-weight: 400;
     font-size: 22px;
     color: #FFF;
 }
@@ -1330,7 +1330,7 @@ footer{
     overflow: hidden;
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 100    ;
+    font-weight: 400    ;
     font-variation-settings:
       "slnt" 0;
     font-size: 18px;
@@ -1452,7 +1452,7 @@ footer{
     overflow: hidden;
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 100;
+    font-weight: 400;
     font-variation-settings: "slnt" 0;
     font-size: 18px;
     display: flex;
@@ -1529,7 +1529,7 @@ aside p {
 .Header-text{
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 100;
+    font-weight: 400;
     font-style: normal;
     font-variation-settings:
       "slnt" 0;
@@ -2560,7 +2560,7 @@ h3{
 .solution .jungle-text{
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 100;
+    font-weight: 400;
     font-style: normal;
     font-variation-settings:
       "slnt" 0;
@@ -3449,7 +3449,7 @@ input:valid {
 
 
    /**Page princip le blog**/
-   .blog_body {
+.blog_body {
     background-color: #F8F2FF;
 }
 
@@ -3548,7 +3548,7 @@ input:valid {
 }
 
     
-    /* Styles for the line under elements */
+/* Styles for the line under elements */
 
 .liste-etiquettes li::after {
     content: '';
@@ -3699,6 +3699,7 @@ strong {
     margin-left: 1.5vw;
     margin-bottom: 5vh;
     padding-top: 2vh;
+    font-weight: 400;
 }
 
 .Etiquette-Article{
@@ -3711,7 +3712,7 @@ strong {
     margin-left: 1vw;
 }
 .cardArticle-BLOG{
-    margin: 1vh;
+    margin: 2vh;
     border-radius: 15px;
     height: 15vh;
 }
@@ -3719,7 +3720,7 @@ strong {
 .article-container-BLOG{
     background-color: #FFF;
     display: flex;
-    height: 51vh;
+    height: 53vh;
     flex-direction: column;
     margin-top: 5vh;
     margin-left: 1vw;
@@ -3729,6 +3730,7 @@ strong {
 
 .article-link-BLOG{
     text-decoration: none;
+    font-weight: 400;
     color: #FFF;
     background-color: #1A3928;
     padding: 10px 20px;
@@ -3739,19 +3741,19 @@ strong {
 
 
 .article-container-Solution{
-    background-color: #E3CAFF;
+    background-color: rgba(216, 169, 245, 0.3);
     display: flex;
-    height: 51vh;
+    height: 53vh;
     flex-direction: column;
     margin-top: 5vh;
     margin-left: 1vw;
     margin-right: 1vw;
     border-radius: 15px;
 }
-
 .Etiquette-Article-Solution{
-    background-color: #d8a9f5;
+    background-color: rgba(216, 169, 245, 0.8);
     color: #1A3928;
+    font-weight: 400;
     padding: 5px 10px;
     border-radius: 5px;
     font-size: 1rem;
@@ -3762,7 +3764,7 @@ strong {
 .article-container-Home{
     background-color: #E3CAFF;
     display: flex;
-    height: 51vh;
+    height: 53vh;
     flex-direction: column;
     margin-top: 5vh;
     margin-left: 1vw;
@@ -3779,3 +3781,385 @@ strong {
     width: fit-content;
     margin-left: 1vw;
 }
+
+
+
+@media (max-width: 400px){
+    .blog-colonne1 {
+        width: 90%;
+        margin-left: 20vw;
+        margin-top: 12vh;
+    }
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Page Minkey */
+.EtiquetteEntreprise{
+    display: flex;
+    background-color: #E3CAFF;
+    color: #1A3928;
+    padding: 5px 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    margin-left: 16vw;
+    margin-bottom: 1vh;
+    rotate: -2deg;
+}
+.container-presentation {
+    background-color: #1A3928;
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+    margin-bottom: 2vh;
+}
+
+.globalPres {
+    display: flex;
+    margin: 5vh;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.globalPres img {
+    width: 20%;
+}
+
+
+.textPres{
+    width: 100%;
+    margin-top: 5vh;
+}
+.textPres,.textPres2, .textPres3 {
+    font-family: "Inter", sans-serif;
+    color: #FFF;
+    font-size:  18px;
+    font-weight: 500;
+    padding-right: 5vw;
+    padding-left: 5vw;
+    text-align: center;
+}
+.textPres3 {
+    padding-bottom: 5vh;
+}
+
+.titlePres {
+    font-family: "Sansita", sans-serif;;
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    color: #FFF;
+    padding-bottom: 2vh;
+
+}
+
+.ImagePres1, .ImagePres2 {
+    width: 20vw;
+    height: 50vh;
+    border-radius: 25px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.ImagePres1 {
+    margin-top: 15vh;
+}
+.textPres2, .textPres3 {
+    margin-top: 10px;
+}
+.emoji1, .emoji2 {
+    width: 5vw;
+
+}
+
+.emoji1, .emoji2 {
+    position: absolute; 
+
+}
+
+.emoji1 {
+    width: 9vw;
+    height: auto;
+    top: 12vh;
+    left: 5vw;
+    transform: scaleX(-1);
+}
+
+.emoji2 {
+    width: 5vw; 
+    height: auto;
+    top: 18vh; 
+    left: 25vw; 
+    rotate: 20deg;
+}
+
+.bouton-GoSolution {
+    display: flex;
+    text-decoration: none;
+    color: #FFF;
+    font-family: "sansita", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    justify-content: center;
+    background-color: #1A3928;
+    border: 1px solid #ffffff;
+    border-radius: 19px;
+    width: fit-content;
+    padding: 10px 20px;
+    margin-left: 16vw;
+    transition: 0.3s ease-in-out;
+}
+
+.bouton-GoSolution:hover {
+    transform: scale(1.1);
+    border-right: 5px solid #ffffff;
+    border-bottom: 5px solid #FFF;
+}
+
+.text-wrapper{
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    display: flex;
+    justify-content: flex-start;
+    background-color: #d8a9f5;
+    overflow: hidden;
+
+}
+
+.content-wrapper{
+    font-size: 48px;
+    font-family: "sansita", sans-serif;
+    font-weight: 700;
+    white-space: nowrap;
+    color: #1A3928;
+    padding: 0 6rem;
+    letter-spacing: 1px;
+    animation: move 6000ms linear infinite;
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+
+.Container-Minkey {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    width: 100%;
+    height: 92vh;
+    background-color: #D5E4DB;
+    padding: 2vh;
+}
+
+.Accroche-Container{
+    margin-left: 5vw;
+    margin-right: 15vw;
+    width: 4;
+    padding-left: 5vw;
+    padding-right: 25vw;
+    color: #1A3928;
+}
+
+.Accroche{
+    font-family: "sansita", sans-serif;
+    font-size: 48px;
+    font-weight: 500;
+    margin-bottom: 2vh;
+}
+
+.Accroche-texte,.Accroche-texte2,.Accroche-texte3,.accroche-Liste{
+    font-family: "Inter", sans-serif;
+    margin-bottom: 0.5vh;
+    font-size: 18px;
+    font-weight: 500;
+
+}
+.Accroche-texte{
+    margin-bottom: 2vh;
+}
+.Accroche-texte2{
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+.accroche-Liste{
+    margin-left: 1vw;
+    font-weight: 700;
+}
+
+
+/* Button Styles */
+.button-Acrroche {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 5vh;
+    border-radius: 19px;
+    color: #1A3928;
+    font-family: "sansita", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    text-decoration: none;
+    border: 1px solid #1A3928;
+    background-color: #D5E4DB;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    width: fit-content;
+    z-index: 1;
+  }
+  
+  .button-Acrroche:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 19px;
+    z-index: -2;
+  }
+  
+  .button-Acrroche:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: var(--primary-color-darken);
+    transition: all 0.4s;
+    border-radius: 19px;
+    z-index: -1;
+  }
+  
+  .button-Acrroche:hover {
+    color: #E3CAFF;
+    background-color: #1A3928;
+  }
+  
+  .button-Acrroche:hover:before {
+    width: 100%;
+  }
+
+
+.Carte1{
+    color: #FFF;
+    position: absolute;
+    right: 20vw;
+    top: 108vh;
+    background-color: #d8a9f5;
+    width: 15vw;
+    height: 40vh;
+    border-radius: 9px;
+    padding: 1vw;
+}
+.Carte-Titre{
+    font-family: "sansita", sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    color: #1A3928;
+    text-align: center;
+    margin-top: 2vh;
+    margin-bottom: 5vh;
+
+}
+.Carte-Texte{
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    padding-top: 6vh;
+    padding-right: 2.5vw;
+    color: #1A3928;
+    margin-top: 2vh;
+    margin-bottom: 5vh;
+}
+.Carte2{
+    color: #FFF;
+    position: absolute;
+    right: 8vw;
+    top: 130vh;
+    z-index: 2;
+    background-color: #1A3928;
+    width: 15vw;
+    height: 40vh;
+    border-radius: 9px;
+}
+
+.Carte-Titre2{
+    font-family: "sansita", sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    color: #D5E4DB;
+    text-align: center;
+    margin-top: 4vh;
+    margin-bottom: 5vh;
+
+}
+.Carte-Texte2{
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #D5E4DB;
+    padding: 0 1.5vw;
+    align-items: center;
+    text-align: center;
+    padding-top: 8vh;
+    margin-top: 2vh;
+    margin-bottom: 5vh;
+}
+
+.Carte3{
+    color: #FFF;
+    position: absolute;
+    right: 22vw;
+    top: 150vh;
+    background-color: #E3CAFF;
+    width: 15vw;
+    height: 40vh;
+    border-radius: 9px;
+}
+.Carte-Titre3{
+    font-family: "sansita", sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    color: #1A3928;
+    text-align: center;
+    margin-top: 6vh;
+    margin-bottom: 5vh;
+
+}
+.Carte-Texte3{
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #1A3928;
+    padding: 0 1.5vw;
+    align-items: center;
+    text-align: center;
+    padding-top: 8vh;
+    margin-top: 2vh;
+    margin-bottom: 5vh;
+}
+
