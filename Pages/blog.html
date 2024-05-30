@@ -185,18 +185,12 @@
 
         // Fonction pour filtrer les articles par étiquette
         function filterArticles(etiquette) {
-            // Récupérer toutes les cartes d'articles
             const cards = document.querySelectorAll('.article-container-BLOG');
-            // Parcourir chaque carte d'article
             cards.forEach(card => {
-            // Récupérer l'étiquette de l'article
             const cardEtiquette = card.querySelector('.Etiquette-Article').innerText;
-            // Vérifier si l'étiquette correspond à celle sélectionnée
             if (cardEtiquette === etiquette) {
-                // Afficher la carte
                 card.style.display = 'block';
             } else {
-                // Cacher la carte
                 card.style.display = 'none';
             }
             });
