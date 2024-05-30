@@ -3794,6 +3794,10 @@ strong {
         margin-left: 20vw;
         margin-top: 12vh;
     }
+
+    .blog-colonne2 {
+        width: 90%;
+    }
     
 
 }
@@ -4198,7 +4202,7 @@ strong {
     margin-top: 20px;
 }
 
-.card-container {
+.card-container-partners {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     flex-wrap: wrap;
@@ -4207,7 +4211,7 @@ strong {
     height: 45vw;
 }
 
-.card {
+.card-partners {
     background-color: #1A3928;
     border-radius: 10px;
     width: 21vw; 
@@ -4223,10 +4227,9 @@ strong {
     text-align: left;
     transition: transform 0.6s;
     transform-style: preserve-3d;
-    margin-top: -11vh;
 }
 
-.card:hover .card-inner {
+.card-partners:hover .card-inner {
     transform: rotateY(180deg);
 }
 
