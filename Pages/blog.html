@@ -84,11 +84,11 @@
         </div>
         <div class="blog-ligne2">
             <ul class="liste-etiquettes">
-                <a class="link1" href="#"><li>Pitch</li></a>
-                <a href="#"><li>Stratégie</li></a>
-                <a  href="#"><li class="link3">Création d'entreprise</li></a>
-                <a href="#"><li>Finances</li></a>
-                <a href="#"><li>Communication</li></a>
+                <a class="link1" href="#" onclick="filterArticles('Pitch')"><li>Pitch</li></a>
+                <a href="#" onclick="filterArticles('Stratégie')"><li>Stratégie</li></a>
+                <a href="#" onclick="filterArticles('Création d\'entreprise')"><li class="link3">Création d'entreprise</li></a>
+                <a href="#" onclick="filterArticles('Finances')"><li>Finances</li></a>
+                <a href="#" onclick="filterArticles('Communication')"><li>Communication</li></a>
             </ul>
 
         </div>
@@ -183,7 +183,24 @@
             .then(response => response.text());
         }
 
-        
+        // Fonction pour filtrer les articles par étiquette
+        function filterArticles(etiquette) {
+            // Récupérer toutes les cartes d'articles
+            const cards = document.querySelectorAll('.article-container-BLOG');
+            // Parcourir chaque carte d'article
+            cards.forEach(card => {
+            // Récupérer l'étiquette de l'article
+            const cardEtiquette = card.querySelector('.Etiquette-Article').innerText;
+            // Vérifier si l'étiquette correspond à celle sélectionnée
+            if (cardEtiquette === etiquette) {
+                // Afficher la carte
+                card.style.display = 'block';
+            } else {
+                // Cacher la carte
+                card.style.display = 'none';
+            }
+            });
+        }
 
     </script>
 
