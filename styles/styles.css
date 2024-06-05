@@ -2730,6 +2730,7 @@ strong {
 
 
 /* Page Minkey */
+
 .EtiquetteEntreprise{
     display: flex;
     background-color: #E3CAFF;
@@ -2744,6 +2745,13 @@ strong {
     margin-bottom: 1vh;
     rotate: -2deg;
 }
+
+.globalPres-mobile,
+#myBtn,
+.modal {
+    display: none;
+}
+
 .container-presentation {
     background-color: #1A3928;
     display: flex;
@@ -2884,7 +2892,6 @@ strong {
 }
 
 
-
 .Container-Minkey {
     display: flex;
     flex-direction: row;
@@ -2910,7 +2917,7 @@ strong {
 .Accroche{
     font-family: "sansita", sans-serif;
     font-size: 48px;
-    font-weight: 700;
+    font-weight: 500;
     margin-bottom: 2vh;
 }
 
@@ -3085,6 +3092,246 @@ strong {
     padding-top: 8vh;
     margin-top: 2vh;
     margin-bottom: 5vh;
+}
+
+
+@media (max-width: 400px) {
+    .ImagePres1,
+    .ImagePres2,
+    .EtiquetteEntreprise {
+        display: none;
+    }
+
+    .globalPres{
+        display: none;
+    }
+
+    .globalPres-mobile,
+    #myBtn,
+    .modal {
+        display: flex;
+    }
+
+    .container-presentation {
+        height: 53vh;
+        line-height: 3vh;
+        flex-direction: column;
+        margin-top: -3vh;
+    }
+
+    .img-magali {
+        width: 10vh;
+        margin-top: -7vh;
+        margin-left: -4.5vh;
+        position: absolute;
+    }
+
+    .textPres-mobile {
+        overflow: hidden;
+        margin-bottom: 2vh;
+    }    
+    
+    .textPres2-mobile {
+        overflow: hidden;
+        margin-bottom: 2vh;
+    }
+
+    .buttons-minkey {
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        width: 100%;
+    }
+
+    .globalPres-mobile {
+        margin: 0;
+        display: block;
+        overflow: hidden;
+        height: 65vh;
+    }
+
+    .titlePres {
+        font-size: 48px;
+        line-height: 5.5vh;
+        margin-bottom: -2.5vh;
+        margin-top: .5vh;
+    }
+
+    #myBtn {
+        display: flex;
+        text-decoration: none;
+        color: #FFF;
+        font-family: "sansita", sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        justify-content: center;
+        background-color: #1A3928;
+        border: 1px solid #ffffff;
+        border-radius: 19px;
+        padding: 12px 15px;
+        transition: 0.3s ease-in-out;
+        height: 6.14vh;
+        width: 37vw;
+        position: absolute;
+        top: 52.5vh;
+        left: 11vw;
+    }
+
+
+    #mybtn:hover {
+        transform: scale(1.1);
+        border-right: 5px solid #ffffff;
+        border-bottom: 5px solid #FFF;
+    }
+
+    .bouton-GoSolution {
+        position: absolute;
+        height: 6vh;
+        padding: 10px 15px;
+        width: 35vw;
+        top: 52.5vh;
+        left: 37vw;
+    }
+
+    .bouton-GoSolution:hover {
+        transform: scale(1.1);
+        border-right: 5px solid #ffffff;
+        border-bottom: 5px solid #FFF;
+    }
+
+    .emoji2 {
+        width: 15vw;
+        top: 49vh;
+        left: 80vw;
+        display: none;
+    }
+
+    .emoji1{
+        width: 20vw;
+        height: auto;
+        top: 43.7vh;
+        left: 1vw;
+        transform: rotateY(360deg);
+        display: none;
+    }
+
+      /* Modal styles */
+    .modal {
+        display: none; 
+        position: fixed; 
+        z-index: 1000; 
+        left: 0;
+        top: 0;
+        margin-top: 0;
+        margin-left: -5vw;
+        width: 110vw; 
+        height: 230vh; 
+        overflow: auto; 
+        background-color: rgba(0,0,0,0.5); 
+    }
+    .modal-content {
+        background-color: #fefefe;
+        margin: 15% auto; 
+        margin-top: 20vh; 
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%; 
+        height: 60vh; 
+        max-width: 600px;
+        text-align: center;
+        padding: 2vh;
+        font-size: 16.5px;
+        color: #1A3928;
+    }
+
+    .close {
+        position: absolute;
+        top: 20.5vh;
+        right: 6vh;
+        color: #1A3928;
+        width: 10vw;
+        font-size: 34px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .text-wrapper{
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+        width: 5000%;
+    }
+    
+    .content-wrapper{
+        font-size: 39px;
+        padding: 0;
+        animation: move 7000ms linear infinite;
+        width: 300vw;
+    }
+
+    .Accroche {
+        margin-top: -1vh;
+        font-size: 38px;
+    }
+    .Container-Minkey{
+        display: flex;
+        overflow-y: hidden;
+        height: 164vh;
+    }
+
+    .Accroche-Container {
+        overflow: hidden;
+        width: 100%;
+        padding: 0;
+        margin-left: 2.5vw;
+        margin-right: 2.5vw;
+        margin-top: -70vh;
+    }
+
+    .button-Acrroche {
+        margin-top: 2vh;
+    }
+
+    .Carte1,
+    .Carte2,
+    .Carte3 {
+        overflow-y: hidden;
+    }
+
+    .Carte1 {
+        top: 162vh;
+        right: 37vw;
+        width: 55vw;
+        height: 27vh;
+    }
+    
+    .Carte2 {
+        top: 185vh;
+        right: 7vw;
+        width: 53vw;
+        height: 27vh;
+    }
+
+    .Carte3 {
+        top: 208vh;
+        right: 37vw;
+        width: 53vw;
+        height: 27vh;
+    } 
+
+    .Carte-Titre,
+    .Carte-Titre2,
+    .Carte-Titre3 {
+        margin-top: 4vh;
+        margin-bottom: -5vh;
+    }
+
 }
 
 /*Page partenaires*/
