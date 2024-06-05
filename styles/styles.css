@@ -2373,6 +2373,10 @@ input:valid {
 
 
    /**Page princip le blog**/
+
+.tab-menu{
+    display: none;
+}
 .blog_body {
     background-color: #F8F2FF;
 }
@@ -2454,7 +2458,7 @@ input:valid {
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
-  
+
 .liste-etiquettes {
     margin-left: 5.5vw; 
     display: flex;
@@ -3736,6 +3740,7 @@ strong {
         overflow-x: auto;
         width: 90vw;
         scroll-snap-type: x mandatory;
+        scrollbar-width: thin; 
         margin: 0 auto;
         margin-bottom: 5vw;
     }
@@ -3752,7 +3757,318 @@ strong {
         margin-bottom: 2vh;
     
     }
+
+
+    /* Page Blog */
+
+    .blog-colonne1 {
+        width: 37%;
+        margin-left: 9vw;
+        margin-top: 12vh;
+    }
+    .ressources {
+        font-family: Sansita, sans-serif;
+        font-size: 2rem;
+        font-weight: 900;
+    }
+
+    .blog-title{
+        font-family: Sansita, sans-serif;
+        font-size: 1.8rem;
+        font-weight: 900;
+
+    
+    }
+
+    .blog-title2{
+        font-family: Sansita, sans-serif;
+        font-size: 1.8rem;
+        font-weight: 900;
+        margin-top: 1vh;
+    
+    }
+
+    .blog-img1 {
+        width: 45vw;
+        height: 29vh;
+        background-color: royalblue;
+        border-radius: 34px;
+        overflow: hidden;
+        white-space: nowrap;
+        margin-top: 8vh;
+        margin-left: 3vw;
+    }
+
+    .blog-ligne2{
+        display: none;
+    }
+
+    .scrollMenuMobile{
+        display: flex;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+        background-color: #FFF;
+        height: 7vh;
+        width: 79.3vw;
+        margin-top: 7vh;
+        margin-left: 10vw;
+        border-radius: 30px;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    }
+
+    .scrollMenuMobile a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 15vw;
+        height: 7vh;
+        text-decoration: none;
+        color: #1A3928;
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+    }
+
+    .Article_ligne1 {
+        background-color: #fff;
+        height: 40vh;
+        width: 79.5vw;
+        margin-left: 9.8vw;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: row;
+        transition: all ease 0.3s;
+    }
+    .button-type-mobile {
+        display: flex;
+        position: absolute;
+        background-color: #1A3928;
+        color: #FFF;
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        border-radius: 15px;
+        padding: 10px 20px;
+        top: 96vh;
+        left: 12vw;
+    }
+
+    .CTA {
+        background-color: #E3CAFF;
+        padding: 50px;
+        height: 34vh;
+        margin-top: 50px;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 10px 9vw 80px;
+    }
+    .CTA img {
+        width: 25vw;
+        height: auto;
+        margin-right: 3vw;
+        margin-left: 1vw;
+        margin-top: 1vh;
+    }
+    .container-CTA {
+        padding-left: 2vw;
+    }
+
+    .CTA h2 {
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        font-variation-settings: "slnt" 0;
+        font-size: 2rem;
+        color: #1A3928;
+        margin-bottom: 5vh;
+    }
+
+    /* Footer */
+
+    .footer{
+        height: 150vh;
+    }
+
+    .content-footer {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    .logo-incub a{
+        width: 24vw;
+        height: auto;
+    }
+
+    .bloc {
+        width: 100%;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .footer-produits h3,
+    .footer-aide h3,
+    .footer-minkey h3,
+    .footer-reseaux h3 {
+        font-size: 28px;
+    }
+
+    .list-produits,
+    .list-aide,
+    .list-minkey,
+    .list-reseaux {
+        font-size: 24px;
+        padding: 5px 0;
+        
+    }
+
+    .list-reseaux {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .list-reseaux img {
+        width: 20px;
+        margin: 5px;
+        transition: transform 0.15s ease-in-out;
+    }
+
+    .list-reseaux a {
+        color: #1A3928;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        padding-right: 5px;
+        transition: color 0.15s ease-in-out;
+    }
+
+    .linkedin {
+        font-size: 16px;
+        transition: color 0.15s ease-in-out;
+    }
+
+    #LinkedinIMG {
+        width: 25px;
+        height: auto;
+        margin-right: 25px;
+        padding-top: 0px;
+    }
+
+    #LinkedinText {
+        padding-top: -15px;
+        font-size: 24px;
+        }
+
+    #InstagramIMG {
+        width: 30px;
+        height: auto;
+        margin-top: 5px;
+        margin-right: 10px;
+    }
+
+    #InstagramText {
+        margin-top: -5px;
+        margin-bottom: -4px;
+    }
+
+    .brand-logo,
+    .logo-incub {
+        padding: 10px 0;
+    }
+
+    .copy {
+        font-size: 24px;
+        padding-bottom: 2vh;
+    }
+
+    .Container-blog {
+        width: 100%;
+        height: 53vh;
+    }
+    
+    .tab-menu{
+        display: flex;
+        background-color: #FFF;
+        color: #FFF;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+        list-style: none;
+        max-width: 800px;
+        padding: 10px;
+        white-space: nowrap;
+        border-bottom: 1px solid #888;
+        border: 50px;
+        border-radius: 15px;
+        overflow-x: auto;
+        user-select: auto;
+    }
+
+    .tab-menu::-webkit-scrollbar{
+        display: none;
+    }
+
+    .tab-btn{
+        color: #1A3928;
+        display: inline-block;
+        font-size: 1em;
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
+        margin: 0 2px;
+        padding: 10px 20px;
+        border-radius: 30px;
+        background-color: #FFF;
+        transition: 0.3 ease-in-out;
+    }
+
+    .tab-btn.active {
+        border-bottom: 1px solid #1A3928;
+    }
+
+    .tab-nav-bar{
+        position:relative;
+        margin: 65px 10px;
+    }
+
+    .tab-navigation{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: fit-content;
+        margin: 0 auto;
+    }
+
+    .left-btn,.right-btn{
+        position: absolute;
+        color: #1A3928;
+        font-size: 1.8em;
+        padding: 10px;
+        
+    }
+
+    .left-btn{
+        left: 0;    
+        background: linear-gradient(to left, transparent, #FFF 80%);
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+        display: none;
+    }
+
+    .right-btn{
+        right: 0;
+        background: linear-gradient(to right, transparent, #FFF 80%);
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
 }
+
+
+
 
 
 
@@ -4423,6 +4739,7 @@ strong {
 
     #LinkedinText {
         padding-top: -15px;;
+        font-size: 18px;
         }
 
     #InstagramIMG {
@@ -4435,6 +4752,7 @@ strong {
     #InstagramText {
         margin-top: -5px;
         margin-bottom: -4px;
+        font-size: 18px;
     }
     .cardArticle {        
         margin: 20px;
@@ -4685,6 +5003,7 @@ strong {
 
     .CTA{
         width: 90vw;
+        height: 38vh;
         padding: 5px;
         margin-top: 40px;
         flex-direction: column;
@@ -4788,24 +5107,81 @@ strong {
         display: none;
     }
 
-    div.scrollMenuMobile {
-        padding-left: 2vw;
+    .tab-menu{
+        display: flex;
         background-color: #FFF;
-        width: 95vw;
-        margin:0 auto;
-        margin-top: 5vh;
-        border-radius: 30px;
-        overflow: auto;
+        color: #FFF;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+        list-style: none;
+        max-width: 800px;
+        padding: 10px;
         white-space: nowrap;
+        border-bottom: 1px solid #888;
+        border: 50px;
+        border-radius: 15px;
+        overflow-x: auto;
+        user-select: auto;
     }
 
-    div.scrollMenuMobile a {
-        display: inline-block;
-        color: #1A3928;
-        text-align: center;
-        padding: 14px;
-        text-decoration: none;
+    .tab-menu::-webkit-scrollbar{
+        display: none;
     }
+
+    .tab-btn{
+        
+        color: #1A3928;
+        display: inline-block;
+        font-size: 1em;
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
+        margin: 0 2px;
+        padding: 10px 20px;
+        border-radius: 30px;
+        background-color: #FFF;
+        transition: 0.3 ease-in-out;
+    }
+
+    .tab-btn.active {
+        border-bottom: 1px solid #1A3928;
+    }
+
+    .tab-nav-bar{
+        position:relative;
+        margin: 65px 5px;
+    }
+
+    .tab-navigation{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 95vw;
+        margin: 0 auto;
+    }
+
+    .left-btn,.right-btn{
+        position: absolute;
+        color: #1A3928;
+        font-size: 1.8em;
+        padding: 10px;
+        
+    }
+
+    .left-btn{
+        left: 0;    
+        background: linear-gradient(to left, transparent, #FFF 80%);
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+        display: none;
+    }
+
+    .right-btn{
+        right: 0;
+        background: linear-gradient(to right, transparent, #FFF 80%);
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+
 
     .Article_ligne1{
         width: 90vw;
@@ -4860,6 +5236,10 @@ strong {
 
     .button-type-mobile{
         display: flex;
+        position: relative;
+        top: 0;
+        left: 0;
+        
         text-decoration: none;
         background-color: #1A3928;
         color: #FFF;
@@ -4869,6 +5249,7 @@ strong {
         border-radius: 15px;
         margin: 0 auto;
         margin-top: 2vh;
+        margin-bottom: 2vh;
     }
 
     

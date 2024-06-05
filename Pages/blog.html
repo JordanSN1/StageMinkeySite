@@ -6,6 +6,8 @@
     <title>Le blog</title>
     <link rel="stylesheet" href="..\styles\styles.css">
     <link rel="icon" href="..\Images/Disign-Minkey.png">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
 </head>
 <body class="blog_body">
      <!-- Loading page-->
@@ -92,14 +94,51 @@
             </ul>
 
         </div>
-        <div class="scrollMenuMobile">
-            <a href="#">Pitch</a> 
-            <a href="#">Stratégie</a> 
-            <a href="#">Création d'entreprise</a> 
-            <a href="#">Finances</a> 
-            <a href="#">Communication</a>
+        <div class="tab-nav-bar">
+            <div class="tab-navigation">
+                <i class="uil uil-angle-left left-btn"></i>
+                <i class="uil uil-angle-right right-btn"></i>
+                <ul class="tab-menu">
+                    <a class="link1" href="#" onclick="filterArticles('Pitch')"><li class="tab-btn">Pitch</li></a>
+                    <a href="#" onclick="filterArticles('Stratégie')"><li class="tab-btn">Stratégie</li></a>
+                    <a href="#" onclick="filterArticles('Création d\'entreprise')"><li class="tab-btn">Création d'entreprise</li></a>
+                    <a href="#" onclick="filterArticles('Finances')"><li class="tab-btn">Finances</li></a>
+                    <a href="#" onclick="filterArticles('Communication')"><li class="tab-btn">Communication</li></a>
+                    <a href="#" onclick="filterArticles('Finances')"><li class="tab-btn">Finances</li></a>
+                    <a href="#" onclick="filterArticles('Communication')"><li class="tab-btn">Communication</li></a>
+                    <a href="#" onclick="filterArticles('Finances')"><li class="tab-btn">Finances</li></a>
+                    <a href="#" onclick="filterArticles('Communication')"><li class="tab-btn">Communication</li></a>
+                </ul>
+            </div>
         </div>
     </div>
+
+    <script>
+        const btnLeft = document.querySelector('.left-btn');
+        const btnRight = document.querySelector('.right-btn');
+        const tabMenu = document.querySelector('.tab-menu');
+
+        const IconVisibility = () => {
+            let scrollLeft = Math.ceil(tabMenu.scrollLeft);
+            let scrollAbleWidth = tabMenu.scrollWidth - tabMenu.clientWidth;
+            btnLeft.style.display = scrollLeft > 0 ? 'block' : 'none';
+            btnRight.style.display = scrollAbleWidth > scrollLeft ? 'block' : 'none';
+        };
+
+        btnRight.addEventListener('click', () => {
+            tabMenu.scrollLeft += 200;
+            setTimeout(IconVisibility, 50);
+        });
+
+        btnLeft.addEventListener('click', () => {
+            tabMenu.scrollLeft -= 200;
+            setTimeout(IconVisibility, 50);
+        });
+
+
+
+
+    </script>
 
     <!--Les articles-->
 
