@@ -121,15 +121,16 @@
 
 
     </div>
+
     <div class="BandeauArticle">
         <span class="minkey-blog">Retrouvez des articles similaire</span>
     </div>
-        <div id="articleContainer-blog" class="container"></div>
+        <div id="articleContainer-BLOG" class="container-BLOG"></div>
         <div class="ButtonMore-Blog"><a href="#">Voir plus</a></div>
             <script>
                 document.addEventListener("DOMContentLoaded", function() {
                 // Récupérer le conteneur des articles
-                const articleContainer = document.getElementById('articleContainer-blog');
+                const articleContainer = document.getElementById('articleContainer-BLOG');
         
                 // Récupérer la liste des fichiers d'articles
                 fetchArticleFiles()
@@ -153,9 +154,9 @@
                                 const cardArticle = document.createElement('div');
                                 const CardDescription = document.createElement('div');
                                 const container = document.createElement('div');
-                                container.classList.add('article-container');
-                                CardDescription.classList.add('CardDescription');
-                                cardArticle.classList.add('cardArticle');
+                                container.classList.add('article-container-Solution');
+                                CardDescription.classList.add('CardDescription-BLOG');
+                                cardArticle.classList.add('cardArticle-BLOG');
                                 cardArticle.style.backgroundImage = `url("${backgroundImage}")`;
                                 cardArticle.innerHTML = `<a href="../Articles/${articleFile}" class="article-link"><h2 class="CardTitle">${title}</h2></a>`;
                                 CardDescription.innerHTML = `<h3 class="ArticleHeadTitle">${headTitle}</h2><p class="ArticleHeadDate">${headDate}</p>`;
@@ -198,6 +199,8 @@
 
         </div>
     </div>
+
+
 
     <div class="CTA-BLOG">
         <img src="../Images/Logo-Minkey-App-Green-RVB.png" alt="#">
