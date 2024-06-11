@@ -4270,7 +4270,145 @@ strong {
 
 }
 
+@media (max-width: 1034px) {
+    .Visuel-Article {
+        width: 70vw;
+        height: 25vh;
+    }
 
+    .Visual-title {
+        font-size: 52px;
+    }
+
+    .Main-content {
+        padding: 5vw;
+    }
+
+    .Article-title {
+        font-size: 44px;
+    }
+
+    .Etiquette{
+        font-size: 20px;
+    }
+
+    .Creation {
+        font-size: 20px;
+    }
+
+    .corps-texte h2 {
+        font-size: 44px;
+    }
+
+    .corps-texte p {
+        font-size: 18px;
+    }
+
+    .Redactedby {
+        margin-left: -3vw;
+    }
+
+    .redact-text,
+    .Redactedby-name,
+    .Share-text {
+        font-size: 20px;
+    }
+
+    .Share-image {
+        width: 3.7vw;
+        margin-top: -0.9vh;
+    }
+}
+
+
+@media (max-width: 820px) {
+    .Visuel-Article {
+        width: 75vw;
+        height: 25vh;
+        border-radius: 14px;
+    }
+
+    .Visual-title {
+        width: 100%;
+        font-size: 40px;
+    }
+
+    .Article-title {
+        font-size: 2.5rem;
+    }
+
+    .Etiquette,
+    .Creation {
+        font-size: 1.25rem;
+    }
+
+    .corps-texte p {
+        font-size: 1.2rem;
+    }
+
+    .Article-description {
+        margin: 0;
+        margin-left: 17vw;
+        margin-top: 4vh;
+    }
+
+    .content-redact,
+    .redact-text,
+    .Share-text {
+        font-size: 1.4rem;
+        margin-left: 5%;
+    }
+
+    .Share-image {
+        width: 5vw;
+        margin-top: -1vh;
+    }
+
+    .article-container-Solution {
+        height: 43vh;
+    }
+
+    .ArticleHeadTitle {
+        font-size: 1.6rem;
+    }
+
+    .ArticleHeadDate {
+        font-size: 1.4rem;
+    }
+
+    .ButtonMore-Blog {
+        margin-top: 2vh;
+        height: 5vh;
+    }
+
+    .CTA-BLOG {
+        width: 80vw;
+        margin-left: 10vw;
+        height: 30vh;
+    }
+
+    .CTA-BLOG img {
+        width: 25vw;
+    }
+
+    .container-CTA-BLOG {
+        width: 50vw;
+        margin-left: -15vw;
+    }
+
+    .Titre-CTA-BLOG {
+        font-size: 24px;
+        margin-top: 3vh;
+    }
+
+    .MailForm {
+        width: 100%;
+    }
+
+    .buttonCTA-BLOG {
+        width: 50%;
+    }
+}
     
 
     
@@ -4354,16 +4492,27 @@ strong {
         margin-bottom: -1vh;
     }
 
+    .all-content {
+        overflow: hidden;
+        padding-top: 0;
+    }
 
     .Main-content {
-        overflow-y: hidden;
+        height: 146vh;
+        overflow: hidden;
+        margin-top: 5vh;
     }
-    .Article-title {
-        font-size: 27px;
+
+    .Main-content h1 {
+        font-size: 29px;
+    }
+
+    .corps-texte p {
+        font-size: 17px;
     }
 
     .corps-texte h2 {
-        font-size: 27px;
+        font-size: 25px;
     }
 
     .Creation {
@@ -4374,33 +4523,59 @@ strong {
     .Visuel-Article {
         height: 35vw;
         width: 80vw;
+        border-radius: 14px;
     }
 
     .Visual-title {
-        font-size: 28px;
+        font-size: 24px;
         width: 100%;
     }
 
     .Article-description{
         width: 100%;
         margin-bottom: 10px;
+        margin-top: 4vh;
+        margin-left: 3vw;
     }
 
-    .Redactedby {
-        font-size: 18px;
+    .redact-text {
+        font-size: 17px;
         margin-left: -0.25vh;
+    }
+
+    .content-redact {
+        margin-left: -1vw;
+    }
+
+    .content-redact span {
+        font-size: 18px;
+    }
+
+    .content-redact img {
+        width: 20vw;
+        margin-left: -0.1vh;
     }
 
     .Share {
         width: 50%;
-        margin-right: 1vh;
+        margin-left: -2vw;
+    }
+
+    .Share-text {
+        font-size: 18px;
     }
 
     .Share-image {
-        width: 6vw;
+        width: 9vw;
         height: auto;
-        margin: 10px;
-        padding-top: 1.5vh;
+        margin: 5px;
+        padding-top: 1.6vh;
+        margin-left: 4vw;
+    }
+
+    .content-share {
+        margin-left: 4vw;
+        margin-top: 1vw;
     }
 
     *{
@@ -4430,10 +4605,10 @@ strong {
         left: 10vw;
     }
 
-
     .Bandeau-Singe div {
         width: 80%;
     }
+
     .Bandeau-Singe img{
         width: 57px;
         height: auto;
@@ -6321,98 +6496,9 @@ strong {
 }
 
 
-@media (max-width: 820px) {
-    .Visuel-Article {
-        width: 75vw;
-        height: 25vh;
-    }
-
-    .Visual-title {
-        width: 100%;
-        font-size: 2.5rem;
-    }
-
-    .Article-title {
-        font-size: 2.5rem;
-    }
-
-    .Etiquette,
-    .Creation {
-        font-size: 1.25rem;
-    }
-
-    .corps-texte p {
-        font-size: 1.2rem;
-    }
-
-    .Article-description {
-        margin: 0;
-    }
-
-    .content-redact,
-    .redact-text,
-    .Share-text {
-        font-size: 1.4rem;
-        margin-left: 5%;
-    }
-
-    .Share-image {
-        width: 5vw;
-        margin-top: -1vh;
-    }
-
-    .article-container-Solution {
-        height: 43vh;
-    }
-
-    .ArticleHeadTitle {
-        font-size: 1.6rem;
-    }
-
-    .ArticleHeadDate {
-        font-size: 1.4rem;
-    }
-
-    .ButtonMore-Blog {
-        margin-top: 2vh;
-        height: 5vh;
-    }
-
-    .CTA-BLOG {
-        width: 80vw;
-        margin-left: 10vw;
-        height: 30vh;
-    }
-
-    .CTA-BLOG img {
-        width: 25vw;
-    }
-
-    .container-CTA-BLOG {
-        width: 50vw;
-        margin-left: -15vw;
-    }
-
-    .Titre-CTA-BLOG {
-        font-size: 24px;
-        margin-top: 3vh;
-    }
-
-    .MailForm {
-        width: 100%;
-    }
-
-    .buttonCTA-BLOG {
-        width: 50%;
-    }
-}
     
 
 @media (max-width: 450px) {
-    .Main-content {
-        height: 265vh;
-    }
-
     .article-container-Solution {
         height: 43vh;
         width: 70vw;
@@ -6475,6 +6561,33 @@ strong {
     }
 }
 
+@media (max-width: 400px) {
+    .all-content {
+        height: 195vh;
+    }
+
+    .Main-content {
+        height: 185vh;
+        overflow-y: hidden;
+        margin-top: 5vh;
+    }
+
+    .Etiquette,
+    .Creation {
+        font-size: 18px;
+    }
+    .Main-content h1 {
+        font-size: 28px;
+    }
+
+    .corps-texte p {
+        font-size: 18px;
+    }
+
+    .corps-texte h2 {
+        font-size: 27px;
+    }
+}
 
 
     
