@@ -4326,6 +4326,34 @@ strong {
 
     }
 
+    .Bandeau-Pro{
+        height: 35vh;
+        padding: 0;
+        padding-top: 4vh;
+    }
+    .CachingPro{
+        font-size: 44px;
+    }
+    
+    .searchBar{
+        width: 90vw;
+        margin-left: 5vw;
+    }
+    .search-Button{
+        padding: 2.7vw;
+    }
+
+    .CachingProSubTitle{
+        font-size: 14px;
+        width: 90vw;
+    }
+    .changing-text{
+        font-size: 32px;
+    }
+    .Stat1-mobile {
+        margin-bottom: -1vh;
+    }
+
 
     .Main-content {
         overflow-y: hidden;
@@ -4392,6 +4420,8 @@ strong {
         position: absolute;
         top: 78vh;
         left: 60vw;
+        width: 25vw;
+
     }
 
     .Button-Minkey{
@@ -4475,6 +4505,7 @@ strong {
 
     .Stat4-mobile{
         width: 113vw;
+        margin-bottom: 1vh;
     }
 
     .Stat4-mobile p{
@@ -4726,6 +4757,137 @@ strong {
 
 }
 
+
+
+@media (max-width: 820px) {
+    .Solution {
+        display: none;
+    }
+
+    .Titre-Solution {
+        font-size: 2.7rem;
+        margin-left: 3px;
+    }
+
+    .Solution-mobile {
+        display: flex;
+        flex-direction: column; 
+        margin: 3vw;
+    }
+
+    .TitreBloc {
+        font-size: 27px;
+    }
+
+    .TexteBloc {
+        font-size: 1.2rem;
+    }
+    
+    .testtaille {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .solution .jungle {
+        font-size: 2.4rem;
+    }
+
+    
+    .slider-solution{
+        height: 50vh;
+    }
+
+    #slide1, #slide2, #slide3, #slide4 , #slide5{
+        height: 46vh;
+        width: 85vw;
+        margin-top: -5vh;
+    }
+
+
+    .CTA{
+        height: 25vh;
+    }
+    
+    .CTA img{
+        width: 20vw;
+        height: auto;
+        margin-left: 1vh;
+        margin-top: 1vh;
+    }
+    
+    .container-CTA{
+        padding-left: 5vh;
+    }
+
+    .Titre-CTA {
+        margin-left: -2vw;
+    }
+
+    .CTA h2{
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        font-variation-settings:
+          "slnt" 0;
+        font-size: 2rem;
+        color: #1A3928;
+        margin-top: 3vh;  
+        margin-bottom: 2vh;
+    }
+
+    .buttonCTA {
+        margin-left: -3vw;
+    }
+        
+    .blog{
+        width: 90%;
+        overflow: hidden;
+    }
+    .ressources{
+        font-size: 44px;
+        height: 9vh;
+    }
+    .blog-ligne1 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #articleContainer-BLOG {
+        overflow-y: hidden;
+    }
+
+    .Container-blog {
+        overflow: hidden;
+        height: 100%;
+    }
+    .container-BLOG > *{
+        height: 46vh;
+        margin-right: 2vw;
+        margin-left: 5vw;
+        margin-bottom: 3vh;
+    }
+
+    .ArticleHeadDate-BLOG {
+        font-size: 1.15rem;
+        margin-bottom: 3vh;
+    }
+
+    .article-container-Solution {
+        height: 48vh;
+    }
+
+    .article-link-BLOG {
+        margin-left: 2vw;
+    }
+
+    .Etiquette-Article-Solution,
+    .ArticleHeadDate-BLOG {
+        margin-left: 2vw;
+    }
+}
+
 @media  (max-width: 450px) {
 
     * {
@@ -4853,6 +5015,7 @@ strong {
         margin-bottom: -4px;
         font-size: 18px;
     }
+
     .cardArticle {        
         margin: 20px;
         border-radius: 20px;
@@ -4982,8 +5145,11 @@ strong {
         margin-top: 25px;
         transition: background-color 0.3s ease-in-out;
         transform: scale(1);
-        width: 100%;
+        width: 90%;
         padding: 16px 0px;
+    }
+    .button-Solution{
+        width: 30vw;
     }
     
     .searchBar .Example {
@@ -5047,13 +5213,13 @@ strong {
         from {opacity: 0;}
         to {opacity: 1;}
     }
-        .Solution {
+    .Solution {
         display: none;
     }
 
     .Titre-Solution {
-        font-size: 30px;
-        margin-left: 3px;
+        font-size: 1.5rem;
+        margin: 10vw 3vw;
     }
 
     .Solution-mobile {
@@ -5063,7 +5229,11 @@ strong {
     }
 
     .TitreBloc {
-        font-size: 27px;
+        font-size: 1.45rem;
+    }
+
+    .TexteBloc {
+        font-size: 1rem;
     }
 
     
@@ -5098,6 +5268,14 @@ strong {
         100%{
             transform: translateX(calc(-180px * 8));
         }
+    }
+
+    .slider-solution {
+        height: 60vh;
+    }
+
+    .solution {
+        height: 85vh;
     }
 
     .CTA{
@@ -5187,7 +5365,7 @@ strong {
         border-radius: 34px;
         overflow: hidden;
         white-space: nowrap;
-        margin-top: 2vh;
+        margin-top: 3vh;
         margin-left: 5vw;
     }
 
@@ -5195,7 +5373,6 @@ strong {
     .blog-ligne2 {
         display: none;
     }
-    
 
 
     .blog-colonne2 {
@@ -5354,6 +5531,7 @@ strong {
     
 
 }
+
 
 .globalPres-mobile,
 #myBtn,
@@ -5748,6 +5926,553 @@ strong {
         margin-bottom: -5vh;
     }
 
+}
+
+@media (max-width: 820px) {
+    .ImagePres1,
+    .ImagePres2,
+    .EtiquetteEntreprise {
+        display: none;
+    }
+
+    .globalPres-mobile{
+        display: none;
+    }
+
+    .modal
+    #myBtn {
+        display: flex;
+    }
+
+    .container-presentation {
+        height: 73vh;
+        line-height: 3vh;
+        flex-direction: column;
+        margin-top: -5vh;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .img-magali {
+        width: 10vh;
+        margin-top: -7vh;
+        margin-left: -4.5vh;
+        position: absolute;
+    }
+
+    .textPres-mobile {
+        margin-top: 4vh;
+        margin-bottom: 2vh;
+    }
+
+    .textPres2-mobile,
+    .textPres3-mobile {
+        margin-bottom: 2vh;
+    }
+
+    .textPres {
+        font-size: 1.6rem;
+        margin-bottom: 2vh;
+    }    
+    
+    .textPres2 {
+        font-size: 1.6rem;
+        margin-bottom: 2vh;
+    }
+
+    .textPres3 {
+        font-size: 1.6rem;
+    }
+
+    .titlePres {
+        font-size: 3.9rem;
+    }
+
+    .buttons-minkey {
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        width: 100%;
+    }
+
+    .globalPres{
+        margin: 0;
+        display: block;
+        overflow: hidden;
+        height: 65vh;
+    }
+
+    .EtiquetteEntreprise h1 {
+        font-size: 5rem;
+        line-height: 5.5vh;
+        margin-bottom: -2.5vh;
+        margin-top: 5vh;
+    }
+
+    #myBtn {
+        display: flex;
+        text-decoration: none;
+        color: #FFF;
+        font-family: "sansita", sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        justify-content: center;
+        background-color: #1A3928;
+        border: 1px solid #ffffff;
+        border-radius: 19px;
+        padding: 12px 15px;
+        transition: 0.3s ease-in-out;
+        height: 6.14vh;
+        width: 37vw;
+        position: absolute;
+        top: 68.5vh;
+        left: 11vw;
+    }
+
+
+    #mybtn:hover {
+        transform: scale(1.1);
+        border-right: 5px solid #ffffff;
+        border-bottom: 5px solid #FFF;
+    }
+
+    .bouton-GoSolution {
+        position: absolute;
+        height: 5.6vh;
+        padding: 10px 15px;
+        width: 35vw;
+        top: 68.7vh;
+        left: 17vw;
+        font-size: 1.6rem;
+    }
+
+    .bouton-GoSolution:hover {
+        transform: scale(1.1);
+        border-right: 5px solid #ffffff;
+        border-bottom: 5px solid #FFF;
+    }
+
+    .emoji2 {
+        width: 15vw;
+        top: 49vh;
+        left: 80vw;
+        display: none;
+    }
+
+    .emoji1{
+        width: 20vw;
+        height: auto;
+        top: 43.7vh;
+        left: 1vw;
+        transform: rotateY(360deg);
+        display: none;
+    }
+
+      /* Modal styles */
+    .modal {
+        display: none; 
+        position: fixed; 
+        z-index: 1000; 
+        left: 0;
+        top: 0;
+        margin-top: 0;
+        margin-left: -5vw;
+        width: 110vw; 
+        height: 230vh; 
+        overflow: auto; 
+        background-color: rgba(0,0,0,0.5); 
+    }
+    .modal-content {
+        background-color: #fefefe;
+        margin: 15% auto; 
+        margin-top: 20vh; 
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%; 
+        height: 60vh; 
+        max-width: 600px;
+        text-align: center;
+        padding: 2vh;
+        font-size: 16.5px;
+        color: #1A3928;
+    }
+
+    .close {
+        position: absolute;
+        top: 20.5vh;
+        right: 6vh;
+        color: #1A3928;
+        width: 10vw;
+        font-size: 34px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .text-wrapper{
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+        width: 5000%;
+    }
+    
+    .content-wrapper{
+        font-size: 3rem;
+        padding: 0;
+        animation: move 7000ms linear infinite;
+        width: 150vw;
+    }
+
+    .Accroche {
+        margin-top: 4vh;
+        font-size: 3.3rem;
+    }
+
+    .Accroche-texte,
+    .Accroche-texte2,
+    .Accroche-texte3,
+    .accroche-Liste {
+        font-size: 1.6rem;
+    }
+
+    .Container-Minkey{
+        display: flex;
+        overflow-y: hidden;
+        height: 155vh;
+    }
+
+    .Accroche-Container {
+        overflow: hidden;
+        width: 100%;
+        padding: 0;
+        margin-left: 2.5vw;
+        margin-right: 2.5vw;
+        margin-top: -90vh;
+    }
+
+    .button-Acrroche {
+        margin-top: 2vh;
+        width: 35vw;
+        padding: 1.2vh 2vh;
+        height: 5vh;
+        font-size: 1.6rem;
+    }
+
+    .Carte1,
+    .Carte2,
+    .Carte3 {
+        overflow-y: hidden;
+    }
+
+    .Carte1 {
+        top: 162vh;
+        right: 37vw;
+        width: 45vw;
+        height: 27vh;
+    }
+    
+    .Carte2 {
+        top: 184vh;
+        right: 7vw;
+        width: 43vw;
+        height: 27vh;
+    }
+
+    .Carte3 {
+        top: 208vh;
+        right: 37vw;
+        width: 43vw;
+        height: 27vh;
+    } 
+
+    .Carte-Titre,
+    .Carte-Titre2,
+    .Carte-Titre3 {
+        font-size: 2.7rem;
+        margin-top: 3vh;
+        margin-bottom: 2vh;
+    }
+
+    .Carte-Texte,
+    .Carte-Texte2,
+    .Carte-Texte3 {
+        font-size: 1.79rem;
+        margin-top: -4vh;
+    }
+
+}
+
+@media (max-width: 400px) {
+    .container-presentation {
+        height: 55vh;
+    }
+
+    .globalPres {
+        display: none;
+    }
+
+    .globalPres-mobile {
+        display: block;
+        margin-top: -10vh;    
+    }
+
+    .titlePres {
+        font-size: 2.4rem;
+        margin-top: 10.5vh;
+        margin-bottom: -2vh;
+    }
+
+    .bouton-GoSolution {
+        top: 53vh;
+        font-size: 1.2rem;
+        left: 38vw;
+        height: 6vh;
+    }
+
+    #myBtn {
+        top: 53vh;
+    }
+
+    .textPres,
+    .textPres2 {
+        font-size: 1.2rem;
+    }
+
+    .text-wrapper{
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+        width: 5000%;
+    }
+    
+    .content-wrapper{
+        font-size: 2rem;
+        padding: 0;
+        animation: move 7000ms linear infinite;
+        width: 220vw;
+    }
+
+    .Container-Minkey {
+        height: 175vh;
+    }
+
+    .Accroche {
+        font-size: 2rem;
+    }
+
+    .Accroche-texte,
+    .Accroche-texte2,
+    .Accroche-texte3,
+    .accroche-Liste {
+        font-size: 1.2rem;
+    }
+
+    .button-Acrroche {
+        width: 55vw;
+        font-size: 1.225rem;
+        padding-top: -4vh;
+    }
+
+    .Carte1,
+    .Carte2,
+    .Carte3 {
+        overflow-x: hidden;
+    }
+
+    .Carte1 {
+        top: 162vh;
+        right: 37vw;
+        width: 57vw;
+        height: 29vh;
+    }
+    
+    .Carte2 {
+        top: 186vh;
+        right: 7vw;
+        width: 55vw;
+        height: 29vh;
+    }
+
+    .Carte3 {
+        top: 212vh;
+        right: 37vw;
+        width: 55vw;
+        height: 29vh;
+    } 
+
+    .Carte-Titre,
+    .Carte-Titre2,
+    .Carte-Titre3 {
+        font-size: 2rem;
+        margin-top: 3vh;
+        margin-bottom: 2vh;
+    }
+
+    .Carte-Texte,
+    .Carte-Texte2,
+    .Carte-Texte3 {
+        font-size: 1.25rem;
+        margin-top: -4vh;
+    }
+}
+
+
+@media (max-width: 820px) {
+    .Visuel-Article {
+        width: 75vw;
+        height: 25vh;
+    }
+
+    .Visual-title {
+        width: 100%;
+        font-size: 2.5rem;
+    }
+
+    .Article-title {
+        font-size: 2.5rem;
+    }
+
+    .Etiquette,
+    .Creation {
+        font-size: 1.25rem;
+    }
+
+    .corps-texte p {
+        font-size: 1.2rem;
+    }
+
+    .Article-description {
+        margin: 0;
+    }
+
+    .content-redact,
+    .redact-text,
+    .Share-text {
+        font-size: 1.4rem;
+        margin-left: 5%;
+    }
+
+    .Share-image {
+        width: 5vw;
+        margin-top: -1vh;
+    }
+
+    .article-container-Solution {
+        height: 43vh;
+    }
+
+    .ArticleHeadTitle {
+        font-size: 1.6rem;
+    }
+
+    .ArticleHeadDate {
+        font-size: 1.4rem;
+    }
+
+    .ButtonMore-Blog {
+        margin-top: 2vh;
+        height: 5vh;
+    }
+
+    .CTA-BLOG {
+        width: 80vw;
+        margin-left: 10vw;
+        height: 30vh;
+    }
+
+    .CTA-BLOG img {
+        width: 25vw;
+    }
+
+    .container-CTA-BLOG {
+        width: 50vw;
+        margin-left: -15vw;
+    }
+
+    .Titre-CTA-BLOG {
+        font-size: 24px;
+        margin-top: 3vh;
+    }
+
+    .MailForm {
+        width: 100%;
+    }
+
+    .buttonCTA-BLOG {
+        width: 50%;
+    }
+}
+    
+
+@media (max-width: 450px) {
+    .Main-content {
+        height: 265vh;
+    }
+
+    .article-container-Solution {
+        height: 43vh;
+        width: 70vw;
+    }
+
+    .ArticleHeadTitle {
+        font-size: 1.6rem;
+    }
+
+    .ArticleHeadDate {
+        font-size: 1.4rem;
+    }
+
+    .ButtonMore-Blog {
+        margin-top: 2vh;
+        height: 5vh;
+    }
+
+    .CTA-BLOG {
+        height: 52vh;
+        margin-left: 4.5vh;
+        margin-right: 2vh;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 2vh;
+    }
+
+    .CTA-BLOG img {
+        width: 25vw;
+        height: 25vw;
+        margin-top: -2vh;
+        margin-left: 13vw;
+    }
+
+    .container-CTA-BLOG {
+        width: 100%;
+        margin-left: auto;
+        padding: 0;
+        overflow: hidden;
+    }
+    
+    .Titre-CTA-BLOG {
+        width: 100%;
+    }
+
+    .container-CTA-BLOG h2 {
+        font-size: 2.1rem;
+    }
+
+    .MailForm {
+        width: 98%;
+        padding: 14px;
+        margin-bottom: 18px;
+        margin-left: .5vh;
+        font-size: 16px;
+    }
+
+    .buttonCTA-BLOG {
+        width: 70%;
+    }
 }
 
 
