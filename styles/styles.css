@@ -314,6 +314,8 @@ footer{
     color: #1A3928;
     padding: 20px 0;
     transition: color 0.15s ease-in-out;
+    padding-top: 25px;
+
 }
 .logo-incub{
     width: 80px;
@@ -505,7 +507,7 @@ footer{
     text-align: center;
     font-size: 18px;
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 20px 15px;
     transition: color 0.15s ease-in-out;
 }
 
@@ -803,7 +805,7 @@ footer{
 .search-Button{
     background-color: #E3CAFF;
     border-radius: 10px;
-    padding: 10.5px;
+    padding: 11.7px 10px;
     position: absolute;
     right: 0;
     top: 0;
@@ -898,9 +900,8 @@ footer{
     font-weight: 400;
     font-size: 22px;
     padding-right: 20px;
-    margin-top: 5vh;
+    margin-top: 24px;
     padding-left: 20px;
-    margin-bottom: 24px;
     color: #FFF;
 }
 
@@ -972,14 +973,13 @@ footer{
     border-radius: 34px;
     width: 29%;
     height: 250px;
-    padding: 20px;
-    padding-top: -30px;
+    padding: 25px;
     margin-right: 20px;
 }
 
 .Stat3 p{
-    font-size: 30px;
-    margin-top: 2vh;
+    font-size: 28px;
+    margin-top: 1vh;
 }
 
 .Stat5 {
@@ -988,7 +988,7 @@ footer{
     color: #1A3928;
     border-radius: 34px;
     width: 39%;
-    height: 38vh;
+    height: 300px;
     position: relative;
     top: -50px;
 
@@ -996,9 +996,9 @@ footer{
 
 .Stat5 img{
     width: 100%;
-    height: 53.5vh;
+    height: 410px;
     position: relative;
-    top: -116px;
+    top: -110px ;
     border-radius: 34px;
 }
 
@@ -1567,7 +1567,7 @@ h3{
     font-variation-settings:
       "slnt" 0;
     color: #1A3928;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .TexteBloc{
@@ -1589,7 +1589,7 @@ h3{
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-    width: 100%;
+    max-width: 110vw;
     height: 350px;
 }
 
@@ -1637,7 +1637,7 @@ h3{
 
 
 .testtaille{
-    width: 650px;
+    width: 40vw;
     height: 300px;
     background-color: #E3CAFF;
     border-radius: 34px;
@@ -2451,13 +2451,20 @@ input:valid {
 .blog-ligne2 {
     background-color: #FFF;
     height: 7vh;
-    width: 79.3vw;
+    width: 83vw;
     margin-top: 7vh;
-    margin-left: 10vw;
+    margin-left: 8vw;
     border-radius: 30px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
+.left-btn{
+    display: none;
+}
+
+.right-btn{
+    display: none;
+}
 
 .liste-etiquettes {
     margin-left: 5.5vw; 
@@ -2547,7 +2554,7 @@ input:valid {
     background-color: #1A3928;
     margin-left: 2vw;
     border-radius: 30px;
-    margin-top: 28vh;
+    margin-top: 24vh;
 }
 
 .scrollMenuMobile{
@@ -2755,8 +2762,8 @@ strong {
     background-color: #1A3928;
     display: flex;
     justify-content: center;
-    height: 80vh;
     margin-bottom: 2vh;
+    height: 80vh;
 }
 
 .globalPres {
@@ -2906,11 +2913,8 @@ strong {
 }
 
 .Accroche-Container{
-    margin-left: 5vw;
-    margin-right: 15vw;
     width: 4;
     padding-left: 5vw;
-    padding-right: 25vw;
     color: #1A3928;
 }
 
@@ -2994,12 +2998,21 @@ strong {
     width: 100%;
   }
 
+.Carte-Minkey{
+    display: flex;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    background-color: #D5E4DB;
+    padding: 2vh;
+}
+
 
 .Carte1{
     color: #FFF;
-    position: absolute;
-    right: 20vw;
-    top: 108vh;
+    position: relative;
+    top: -160px;
+    right: -180px;
+
     background-color: #d8a9f5;
     width: 15vw;
     height: 40vh;
@@ -3028,9 +3041,8 @@ strong {
 }
 .Carte2{
     color: #FFF;
-    position: absolute;
-    right: 8vw;
-    top: 130vh;
+    position: relative;
+    right: -150px;
     z-index: 2;
     background-color: #1A3928;
     width: 15vw;
@@ -3063,9 +3075,10 @@ strong {
 
 .Carte3{
     color: #FFF;
-    position: absolute;
-    right: 22vw;
-    top: 150vh;
+    position: relative;
+    top: 165px;
+    right: 320px;
+    z-index: 2;
     background-color: #E3CAFF;
     width: 15vw;
     height: 40vh;
@@ -3263,7 +3276,7 @@ strong {
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         width: 40vw;
         height: 76vh;
-        border: 2px solid #f7d6f2;
+        border: 2px solid transparent;
         padding: 5vh;
         margin-top: 2.9vw;
         margin-left: 2.9vw;
@@ -5836,6 +5849,7 @@ strong {
         line-height: 3vh;
         flex-direction: column;
         margin-top: -3vh;
+
     }
 
     .img-magali {
