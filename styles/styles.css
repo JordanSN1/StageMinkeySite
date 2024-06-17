@@ -1398,8 +1398,8 @@ aside p {
     justify-content: center;
     align-items: center;
     z-index: 9999;
-    animation: slideUp 2.5s forwards;
-    animation-delay: 3s;
+    animation: slideUp 1.5s forwards;
+    animation-delay: 1.5s;
 }
 
 #loader img {
@@ -1412,7 +1412,7 @@ aside p {
     width: 400px;
     height: auto;
     animation: fadeOut 2s forwards;
-    animation-delay: 2s;
+    animation-delay: .5s;
     animation-timing-function: linear;
 }
 
