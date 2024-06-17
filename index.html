@@ -3,12 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minkey - Aide Entrepreneuriale</title>
-    <meta name="description" content="Minkey aide les solopreneurs, entrepreneurs et auto-entrepreneurs à réussir dans la jungle entrepreneuriale. Découvrez nos solutions et rejoignez notre communauté.">
-    <meta name="keywords" content="Minkey, entrepreneurs, solopreneurs, auto-entrepreneurs, aide entrepreneuriale">
+    <title>Minkey - Aide Entrepreneuriale et Solutions pour Entrepreneurs</title>
+
+    
     <link rel="stylesheet" href="styles/styles.css">
     <script src="https://unpkg.com/typewriter-effect@2.18.0/dist/core.js"></script>
     <link rel="icon" href="Images/Disign-Minkey.png">
+
+    <!-- Meta SEO  -->
+    <meta name="description" content="Minkey aide les solopreneurs, entrepreneurs et auto-entrepreneurs à réussir dans la jungle entrepreneuriale avec des solutions innovantes et une communauté de soutien.">
+    <meta name="keywords" content="Minkey, entrepreneurs, solopreneurs, auto-entrepreneurs, aide entrepreneuriale, solutions entrepreneuriales, communauté d'entrepreneurs">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <meta name="bingbot" content="index, follow">
+    <meta name="author" content="Minkey">
+    <meta name="publisher" content="Minkey">
+
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Minkey - Aide Entrepreneuriale et Solutions pour Entrepreneurs">
+    <meta property="og:description" content="Minkey aide les solopreneurs, entrepreneurs et auto-entrepreneurs à réussir dans la jungle entrepreneuriale avec des solutions innovantes et une communauté de soutien.">
+    <meta property="og:image" content="Images/Logo-Minkey-Green-RVB.png">
+    <meta property="og:url" content="https://www.minkey.fr">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Minkey">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:locale:alternate" content="en_US">
+
 </head>
 
 <body>
@@ -26,7 +47,7 @@
         // Cacher la page de chargement après 3 secondes
         setTimeout(function() {
             document.getElementById("loader").style.display = "none";
-        }, 6000);
+        }, 1000);
         });
 
         
@@ -43,19 +64,20 @@
 
 
     <!-- Navbar -->
-    <nav class = 'Navbar'>
+    <nav class="Navbar">
         <ul class="Sidebar">
-            <li class="HideSidebar" onclick="HideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li> <br> <br>
+            <li class="HideSidebar" onclick="HideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="60px" viewBox="0 -960 960 960" width="40px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li> <br> <br>
             <li class="Nav-List1"><a class="links" href="..\Pages\solution.html">Solution</a></li> <br>
             <li class="Nav-List1"><a class="links" href="..\Pages\Minkey.html">Minkey</a></li> <br>
             <li class="Nav-List1"><a class="links" href="..\Pages\blog.html">Le blog</a></li> <br>
             <li class="Nav-List1"><a class="links" href="..\Pages\Partenaire.html">Partenaires</a></li> <br>
+            <li class="Nav-List1"><a class="links" href="..\Pages\contact.html">Contact</a></li> <br>
         </ul>
         <ul class="Nav-container">
             <li class="list-image"><a href="index.html"><img class="HomeImage" src="Images\Logo-Minkey-Green-RVB.png" alt="HomeImage"></a></li>
             <li class="Nav-List"><a class="links" href="..\Pages\solution.html">Solution</a></li>
             <li class="Nav-List"><a class="links" href="..\Pages\Minkey.html">Minkey</a></li>
-            <li class="Nav-List"><a class="links" href="..\Pages\blog.html">Le blog</a></li>
+            <li class="Nav-List"><a class="links" href="..\Pages\blog.html">Le blog</a></li> 
             <li class="Nav-List"><a class="links" href="..\Pages\Partenaire.html">Partenaires</a></li>
             <li class="icon" onclick="ShowSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
         </ul>
