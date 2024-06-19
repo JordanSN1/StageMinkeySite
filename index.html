@@ -450,74 +450,71 @@
      <!-- Bandeau Articles -->
 
 
-     <div id="articleContainer-BLOG" class="container-BLOG"></div>
+    <div id="articleContainer-BLOG" class="container-BLOG"></div>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-        // Récupérer le conteneur des articles
-        const articleContainer = document.getElementById('articleContainer-BLOG');
- 
-        // Récupérer la liste des fichiers d'articles
-        fetchArticleFiles()
-           .then(articleFiles => {
-           // Charger chaque article et générer les cartes
-           articleFiles.slice(0, 3).forEach(articleFile => { // Modify this line to limit the number of articles
-              fetchArticleContent(articleFile)
-              .then(articleContent => {
-                 // Extraire le titre et l'image de l'article
-                 const parser = new DOMParser();
-                 const articleHTML = parser.parseFromString(articleContent, 'text/html');
-                 const title = articleHTML.querySelector('title').innerText;
-                 const Etiquette = articleHTML.querySelector('.Etiquette').innerText;
-                 const headTitle = articleHTML.querySelector('.Article-title').innerText;
-                 const headDate = articleHTML.querySelector('.Creation').innerText;
-                 const backgroundImage = articleHTML.querySelector('.Visuel-Article').src;
- 
-                 // Créer une carte pour chaque article avec le titre et l'image de fond
-                 const cardArticle = document.createElement('div');
-                 const CardDescription = document.createElement('div');
-                 const container = document.createElement('div');
-                 container.classList.add('article-container-Home');
-                 CardDescription.classList.add('CardDescription-BLOG');
-                 cardArticle.classList.add('cardArticle-BLOG');
-                 cardArticle.style.backgroundImage = `url("${backgroundImage}")`;
-                 cardArticle.innerHTML = `<a href="../Articles/${articleFile}" class="article-link"><h2 class="CardTitle">${title}</h2></a>`;
-                 CardDescription.innerHTML = `<h3 class="ArticleHeadTitle">${headTitle}</h2> <p class="Etiquette-Article-Home">${Etiquette}</p> <p class="ArticleHeadDate-BLOG">${headDate}</p> <a href="../Articles/${articleFile}" class="article-link-BLOG">Lire l'article</a>`;
-                 container.appendChild(cardArticle);
-                 container.appendChild(CardDescription);
-                 articleContainer.appendChild(container);
-              })
-              .catch(error => console.error('Erreur de chargement de l\'article:', error));
-           });
-           })
-           .catch(error => console.error('Erreur de chargement des fichiers d\'articles:', error));
+            // Récupérer le conteneur des articles
+            const articleContainer = document.getElementById('articleContainer-BLOG');
+
+            // Récupérer la liste des fichiers d'articles
+            fetchArticleFiles()
+                .then(articleFiles => {
+                    // Charger chaque article et générer les cartes
+                    articleFiles.slice(0, 3).forEach(articleFile => { // Modify this line to limit the number of articles
+                        fetchArticleContent(articleFile)
+                            .then(articleContent => {
+                                // Extraire le titre et l'image de l'article
+                                const parser = new DOMParser();
+                                const articleHTML = parser.parseFromString(articleContent, 'text/html');
+                                const title = articleHTML.querySelector('title').innerText;
+                                const Etiquette = articleHTML.querySelector('.Etiquette').innerText;
+                                const headTitle = articleHTML.querySelector('.Article-title').innerText;
+                                const headDate = articleHTML.querySelector('.Creation').innerText;
+                                const backgroundImage = articleHTML.querySelector('.Visuel-Article').src;
+
+                                // Créer une carte pour chaque article avec le titre et l'image de fond
+                                const cardArticle = document.createElement('div');
+                                const CardDescription = document.createElement('div');
+                                const container = document.createElement('div');
+                                container.classList.add('article-container-Home');
+                                CardDescription.classList.add('CardDescription-BLOG');
+                                cardArticle.classList.add('cardArticle-BLOG');
+                                cardArticle.style.backgroundImage = `url("${backgroundImage}")`;
+                                cardArticle.innerHTML = `<a href="../Articles/${articleFile}" class="article-link"><h2 class="CardTitle">${title}</h2></a>`;
+                                CardDescription.innerHTML = `<h3 class="ArticleHeadTitle">${headTitle}</h2> <p class="Etiquette-Article-Home">${Etiquette}</p> <p class="ArticleHeadDate-BLOG">${headDate}</p> <a href="../Articles/${articleFile}" class="article-link-BLOG">Lire l'article</a>`;
+                                container.appendChild(cardArticle);
+                                container.appendChild(CardDescription);
+                                articleContainer.appendChild(container);
+                            })
+                            .catch(error => console.error('Erreur de chargement de l\'article:', error));
+                    });
+                })
+                .catch(error => console.error('Erreur de chargement des fichiers d\'articles:', error));
         });
- 
+
         // Fonction pour récupérer la liste des fichiers d'articles
         function fetchArticleFiles() {
-        return fetch('../articles/')
-           .then(response => response.text())
-           .then(text => {
-           const parser = new DOMParser();
-           const htmlDocument = parser.parseFromString(text, 'text/html');
-           const links = htmlDocument.querySelectorAll('a');
-           const articleFiles = [];
-           links.forEach(link => {
-              if (link.href.endsWith('.html')) {
-              articleFiles.push(link.href.split('/').pop());
-              }
-           });
-           return articleFiles;
-           });
+            return fetch('Articles/')
+                .then(response => response.text())
+                .then(text => {
+                    const parser = new DOMParser();
+                    const htmlDocument = parser.parseFromString(text, 'text/html');
+                    const links = htmlDocument.querySelectorAll('a');
+                    const articleFiles = [];
+                    links.forEach(link => {
+                        if (link.href.endsWith('.html')) {
+                            articleFiles.push(link.href.split('/').pop());
+                        }
+                    });
+                    return articleFiles;
+                });
         }
- 
+
         // Fonction pour charger le contenu HTML d'un article
         function fetchArticleContent(articleFile) {
-        return fetch(`../articles/${articleFile}`) // Assurez-vous que le chemin est correct
-           .then(response => response.text());
+            return fetch(`articles/${articleFile}`) // Assurez-vous que le chemin est correct
+                .then(response => response.text());
         }
- 
-        
- 
     </script>
     
     </container>
