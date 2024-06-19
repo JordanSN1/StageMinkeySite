@@ -7315,7 +7315,7 @@ input, select, .contact-submit {
 }
 
 
-@media (max-width:360px) {
+@media (max-width:390px) {
     .globalPres-mobile{
         background-color: #000  ;
     }
