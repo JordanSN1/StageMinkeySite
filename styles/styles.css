@@ -6919,7 +6919,7 @@ input, select, .contact-submit {
 
     .titlePres {
         font-size: var(--tailleH1);
-        margin-top: 3vh;
+        margin-top: 2vh;
         margin-bottom: 5vh;
     }
 
@@ -6956,7 +6956,7 @@ input, select, .contact-submit {
     }
 
     .Container-Minkey {
-        height: 188vh;
+        height: 170vh;
     }
 
     .Accroche-Container {
@@ -7084,7 +7084,7 @@ input, select, .contact-submit {
     }
 
     .Container-Minkey {
-        height: 180vh;
+        height: 170vh;
     }
 
     .Accroche-Container {
@@ -7093,6 +7093,18 @@ input, select, .contact-submit {
 
     .Accroche {
         font-size: 38px;
+    }
+
+    .Accroche-texte{
+        padding-left: 15px;
+    }
+
+    .Accroche-texte2,.Accroche-texte3{
+        padding-left: 15px;
+    }
+
+    .accroche-Liste{
+        padding-left: 15px;
     }
 
     .Accroche-texte,
@@ -7107,6 +7119,7 @@ input, select, .contact-submit {
         height: 45px;
         padding: 10px 20px;
         font-size: 18px;
+        margin-left: 25px;  
     }
 
     .Carte1,
@@ -7116,21 +7129,21 @@ input, select, .contact-submit {
     }
 
     .Carte1 {
-        top: 170vh;
+        top: 165vh;
         right: 37vw;
         width: 57vw;
         height: 29vh;
     }
 
     .Carte2 {
-        top: 192vh;
+        top: 187vh;
         right: 7vw;
         width: 55vw;
         height: 29vh;
     }
 
     .Carte3 {
-        top: 220vh;
+        top: 215vh;
         right: 37vw;
         width: 55vw;
         height: 29vh;
