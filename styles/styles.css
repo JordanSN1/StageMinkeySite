@@ -6904,7 +6904,6 @@ input, select, .contact-submit {
 @media (max-width:460px) {
     .container-presentation {
         height: 65vh;
-        background-color: black;
 
     }
 
@@ -6957,7 +6956,7 @@ input, select, .contact-submit {
     }
 
     .Container-Minkey {
-        height: 170vh;
+        height: 180vh;
     }
 
     .Accroche-Container {
