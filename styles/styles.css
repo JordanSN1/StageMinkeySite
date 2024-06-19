@@ -7075,7 +7075,7 @@ input, select, .contact-submit {
 
     #myBtn {
         top: 61vh;
-        padding-top: 15px;
+        padding-top: 12px;
         height: 6vh;
     }
 
@@ -7085,14 +7085,15 @@ input, select, .contact-submit {
     }
 
     .text-wrapper{
-        padding-top: 1vh;
-        padding-bottom: 1vh;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
         width: 5000%;
     }
 
     .content-wrapper{
         font-size: 2rem;
         padding: 0;
+        padding-bottom: 5px;
         animation: move 7000ms linear infinite;
         width: 220vw;
     }
