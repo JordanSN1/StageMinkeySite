@@ -6985,21 +6985,21 @@ input, select, .contact-submit {
     }
 
     .Carte1 {
-        top: 150vh;
+        top: 160vh;
         right: 37vw;
         width: 57vw;
         height: 29vh;
     }
 
     .Carte2 {
-        top: 172vh;
+        top: 182vh;
         right: 7vw;
         width: 55vw;
         height: 29vh;
     }
 
     .Carte3 {
-        top: 198vh;
+        top: 210vh;
         right: 37vw;
         width: 55vw;
         height: 29vh;
@@ -7098,21 +7098,21 @@ input, select, .contact-submit {
     }
 
     .Carte1 {
-        top: 162vh;
+        top: 172vh;
         right: 37vw;
         width: 57vw;
         height: 29vh;
     }
     
     .Carte2 {
-        top: 186vh;
+        top: 196vh;
         right: 7vw;
         width: 55vw;
         height: 29vh;
     }
 
     .Carte3 {
-        top: 212vh;
+        top: 222vh;
         right: 37vw;
         width: 55vw;
         height: 29vh;
@@ -7316,8 +7316,123 @@ input, select, .contact-submit {
 
 
 @media (max-width:480px) {
-    .globalPres-mobile{
-        background-color: #000  ;
+    .container-presentation {
+        height: 65vh;
+
+    }
+
+    .globalPres {
+        display: none;
+    }
+
+    .globalPres-mobile {
+        display: block;
+        height: 65vh;
+        margin-top: 10vh;
+    }
+
+    .titlePres {
+        font-size: var(--tailleH1);
+        margin-top: 1vh;
+        margin-bottom: 5vh;
+    }
+
+    .bouton-GoSolution {
+        top: 63vh;
+        font-size: 1.2rem;
+        left: 38vw;
+        height: 6vh;
+    }
+
+    #myBtn {
+        top: 61vh;
+        padding-top: 15px;
+        height: 6vh;
+    }
+
+    .textPres,
+    .textPres2 {
+        font-size: 21px;
+    }
+
+    .text-wrapper{
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+        width: 5000%;
+    }
+
+    .content-wrapper{
+        font-size: 2rem;
+        padding: 0;
+        animation: move 7000ms linear infinite;
+        width: 220vw;
+    }
+
+    .Container-Minkey {
+        height: 160vh;
+    }
+
+    .Accroche-Container {
+        margin-top: -80vh;
+    }
+
+    .Accroche {
+        font-size: 38px;
+    }
+
+    .Accroche-texte,
+    .Accroche-texte2,
+    .Accroche-texte3,
+    .accroche-Liste {
+        font-size: 1.2rem;
+    }
+
+    .button-Acrroche {
+        width: 55vw;
+        font-size: 1.225rem;
+        padding-top: -4vh;
+    }
+
+    .Carte1,
+    .Carte2,
+    .Carte3 {
+        overflow-x: hidden;
+    }
+
+    .Carte1 {
+        top: 160vh;
+        right: 37vw;
+        width: 57vw;
+        height: 29vh;
+    }
+
+    .Carte2 {
+        top: 182vh;
+        right: 7vw;
+        width: 55vw;
+        height: 29vh;
+    }
+
+    .Carte3 {
+        top: 210vh;
+        right: 37vw;
+        width: 55vw;
+        height: 29vh;
+    } 
+
+    .Carte-Titre,
+    .Carte-Titre2,
+    .Carte-Titre3 {
+        font-size: 2rem;
+        margin-top: 3vh;
+        margin-bottom: 2vh;
+    }
+
+    .Carte-Texte,
+    .Carte-Texte2,
+    .Carte-Texte3 {
+        font-size: 1.25rem;
+        margin-top: -4vh;
     }
     
 }
