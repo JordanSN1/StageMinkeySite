@@ -7182,7 +7182,29 @@ input, select, .contact-submit {
         margin-top: -4vh;
     }
 }
+@media (max-width: 420px){
+    .Stats-Ligne1-mobile{
+        margin-bottom: 3.5vh;
 
+    }
+
+    .Stats-Ligne3-mobile{
+        margin-bottom: -1vh;
+
+    }
+
+    .HomeHook{
+        height: 95vh;
+    }
+
+    .Button-Minkey{
+        top: 95vh;
+    }
+
+    .button-Solution{
+        top: 95vh;
+    }
+}
 
 @media (max-width: 400px) {
     .container-presentation {
