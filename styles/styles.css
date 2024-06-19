@@ -6544,7 +6544,9 @@ input, select, .contact-submit {
     }
 
     .EtiquetteEntreprise {
+        margin: 0 auto;
         margin-top: 4vh;
+
     }
 
     .textPres, .textPres2, .textPres3 {
@@ -6900,7 +6902,8 @@ input, select, .contact-submit {
 }
 @media (max-width: 450px) {
     .container-presentation {
-        height: 55vh;
+        height: 65vh;
+
     }
 
     .globalPres {
@@ -6909,24 +6912,25 @@ input, select, .contact-submit {
 
     .globalPres-mobile {
         display: block;
-        margin-top: -10vh;
+        height: 65vh;
+        margin-top: 10vh;
     }
 
     .titlePres {
         font-size: var(--tailleH1);
-        margin-top: 16.5vh;
-        margin-bottom: -1vh;
+        margin-top: 1vh;
+        margin-bottom: 5vh;
     }
 
     .bouton-GoSolution {
-        top: 53vh;
+        top: 63vh;
         font-size: 1.2rem;
         left: 38vw;
         height: 6vh;
     }
 
     #myBtn {
-        top: 51vh;
+        top: 61vh;
         padding-top: 15px;
         height: 6vh;
     }
@@ -7020,7 +7024,7 @@ input, select, .contact-submit {
 
 @media (max-width: 400px) {
     .container-presentation {
-        height: 55vh;
+        height: 65vh;
     }
 
     .globalPres {
@@ -7029,24 +7033,23 @@ input, select, .contact-submit {
 
     .globalPres-mobile {
         display: block;
-        margin-top: -3vh;    
+        margin-top: 10vh;
     }
 
     .titlePres {
         font-size: 2.4rem;
-        margin-top: 20px;
-        margin-bottom: 1vh;
+        margin-bottom: 5vh;
     }
 
     .bouton-GoSolution {
-        top: 54vh;
+        top: 64vh;
         font-size: 1.2rem;
         left: 38vw;
         height: 6vh;
     }
 
     #myBtn {
-        top: 52vh;
+        top: 62vh;
     }
 
     .textPres,
