@@ -6903,7 +6903,7 @@ input, select, .contact-submit {
 
 
 
-@media (max-width:500px) {
+@media (max-width:550px) {
     .container-presentation {
         height: 65vh;
         background-color: black;
