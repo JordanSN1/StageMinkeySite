@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr" style="overflow-x: hidden;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="..\styles\styles.css">
+    <title>Qu'est ce que minkey ?</title>
+</head>
+<body style="overflow-x: hidden;">
+        <!-- Loading page-->
+
+        <div id="loader">
+            <img class="loadingMinkey" src="..\Images/Logo-Minkey-pink-RVB.png" alt="logo">
+        </div>
+        
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+            // Afficher la page de chargement
+            document.getElementById("loader").style.display = "flex";
+        
+            // Cacher la page de chargement après 3 secondes
+            setTimeout(function() {
+                document.getElementById("loader").style.display = "none";
+            }, 3000);
+            });
+        
+                
+        </script>
+        
+        
+        <!-- Navbar -->
+        <nav class="Navbar">
+            <ul class="Sidebar">
+                <li class="HideSidebar" onclick="HideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="60px" viewBox="0 -960 960 960" width="40px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li> <br> <br>
+                <li class="Nav-List1"><a class="links" href="../Pages/solution.html">Solution</a></li> <br>
+                <li class="Nav-List1"><a class="links" href="../Pages/minkey.html">Minkey</a></li> <br>
+                <li class="Nav-List1"><a class="links" href="../Pages/blog.html">Le blog</a></li> <br>
+                <li class="Nav-List1"><a class="links" href="../Pages/Partenaire.html">Partenaires</a></li> <br>
+                <li class="Nav-List1"><a class="links" href="../Pages/contact.html">Contact</a></li> <br>
+            </ul>
+            <ul class="Nav-container">
+                <li class="list-image"><a href="../index.html"><img class="HomeImage" src="../Images/Logo-Minkey-Green-RVB.png" alt="HomeImage"></a></li>
+                <li class="Nav-List"><a class="links" href="../Pages/solution.html">Solution</a></li>
+                <li class="Nav-List"><a class="links" href="../Pages/minkey.html">Minkey</a></li>
+                <li class="Nav-List"><a class="links" href="../Pages/blog.html">Le blog</a></li> 
+                <li class="Nav-List"><a class="links" href="../Pages/Partenaire.html">Partenaires</a></li>
+                <li class="icon" onclick="ShowSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+            <a class="buttonProfile" href="https://my.minkey.fr"><img class="profile" src="../Images/Profile.png" alt="profile"></a>
+            
+            <a class="ButtonContact" href="../Pages/contact.html">Contact</a>
+        </nav>
+        
+        <script>
+            function ShowSidebar() {
+                const Sidebar = document.querySelector('.Sidebar')
+                Sidebar.style.display = 'flex'
+            }
+            function HideSidebar() {
+                const Sidebar = document.querySelector('.Sidebar')
+                Sidebar.style.display = 'none'
+            }
+        </script>
+
+        <container class="MainContent-Mentions">
+
+            <div class="Mentions-Legales">
+
+                <h1> Mentions Légales </h1>
+
+
+                <h2> Éditeur de site</h2>
+
+                <p>Le site Minkey est édité par la Société Minkey, Société par Actions Simplifiée au capital de 1500 euros, immatriculée au Registre des Commerces et des Sociétés (R.C.S) de Paris par le numéro SIREN 979 590 783, et dont le siège social se situe au 61 rue de Lyon 75012 Paris.</p>
+                <p>Directeur de la publication : Magali Contarini</p>
+                <p>La société Minkey et son directeur de publication peuvent être contactés :</p>
+                <p>par courriel à l’adresse suivante : contact@minkey.fr</p>
+                <p>par téléphone au numéro suivant : +33 6 95 93 72 05</p>
+
+                <h2> Hébergeur du site</h2>
+
+                <p>Le site est hébergé par : O2Switch (Siret : 510 909 807 00032), dont le siège social est situé à :</p>
+                <p>Chemin des Pardiaux, 63000 Clermont-Ferrand.</p>
+
+                <h2> Données et réclamations </h2>
+
+                <p>Les informations recueillies font l’objet d’un traitement informatique destiné à l’amélioration du quotidien de porteurs et porteuses de projets et d’entrepreneurs et d’entrepreneures et des professionnels de la création et gestion d’entreprise. </p>
+                <p>Les destinataires des données sont des porteurs et porteuses de projets et d’entrepreneurs et d’entrepreneures et des professionnels de la création et gestion d’entreprise. 
+                </p>
+                <p>Les données présentées sur la solution Minkey permettent d’identifier les compétences que vous pouvez avoir besoin et que vous souhaitez partager, ainsi que vos disponibilités pour échanger, et votre situation géographique (Ville ou région). 
+                </p>
+                <p>Il est recommandé de ne pas échanger des données stratégiques et confidentielles au sujet de votre projet d’entreprise ou de votre entreprise sur la solution Minkey. La société Minkey ne pourra être tenue responsable en cas de diffusion de certaines informations communiquées par vos soins lors de vos échanges. 
+                </p>
+                <p>Conformément à la loi « informatique et libertés » du 6 janvier 1978 modifiée en 2004, vous bénéficiez d’un droit d’accès et de rectification aux informations qui vous concernent, que vous pouvez exercer en vous adressant à l’adresse suivante :
+                </p>
+                <p>Minkey, 61 rue de Lyon 75012 Paris
+                </p>
+                <p>Ou contact@minkey.fr
+                </p>
+                <p>Vous devez spécifier l’objet de votre demande et expliquer le plus clairement possible votre requête. Si vous souhaitez obtenir des détails sur le traitement de vos données, n’hésitez pas à nous contacter.
+
+                </p>
+            </div>
+
+
+        </container>
+
+
+        <!-- Footer -->
+        <footer>
+            <div class="CatchTextFooter">
+                <h2>Minkey est soutenu par </h2>
+            </div>
+            <div class="logo-incub">
+                <a href="https://diversidays.com/" target="_blank"><img src="..\Images/Diversidays.png" alt="Images Incubateurs"></a>
+                <a href="https://empow-her.com/" target="_blank"><img src="..\Images/Empowher.png" alt="Images Incubateurs"></a>
+                <a href="https://stationf.co/" target="_blank"><img src="..\Images/StationF.png" alt="Images Incubateurs"></a>
+                <a href="https://hellowilla.co/" target="_blank"><img src="..\Images/willa.png" alt="Images Incubateurs"></a>
+            </div>
+    
+            <div class="content-footer">
+                <div class="brand">
+                    <a href="index.html"><img class="brand-logo" src="..\Images\Logo-Minkey-Green-RVB.png" alt="Logo Minkey"></a>
+                    <p class="brand-text">Minkey, c’est le petit singe malin qui t’aide à t’en sortir dans la jungle entrepreneuriale.</p>
+        
+                </div>
+                <div class="bloc footer-produits">
+                    <h3 class="title">produits</p>
+                    <ul class="list-produits">
+                        <li><a href="#">Minkey</a></li>
+                        <li><a href="#">La solution</a></li> 
+                    </ul>
+                </div>
+                <div class="bloc footer-aide">
+                    <h3 class="title">aide</p>
+                    <ul class="list-aide">
+                        <li><a href="#">Qui est minkey ?</a></li>
+                        <li><a href="#">Minkeypédia</a></li>
+                    </ul>
+                </div>
+                <div class="bloc footer-minkey">
+                    <h3 class="title">Minkey</p>
+                    <ul class="list-minkey">
+                        <li><a href="../Pages/mentions-legales.html">Mentions légales</a></li>
+                        <li><a href="../Pages/protection-donnees.html">Protection des données</a></li>
+                        <li><a href="../Pages/cgv-cgu.html">CVG & CGU</a></li>
+                        <li><a href="../Pages/politiques-cookies.html">Politiques de cookies</a></li>
+                    </ul>
+                </div>
+                <div class="bloc footer-reseaux">
+                    <h3 class="title">Nos reseaux</p>
+                    <ul class="list-reseaux">
+                        <li><a id="InstagramText" class="Instagram" href="https://www.instagram.com/minkey.fr/" target="_blank"><img class="Reseaux" id="InstagramIMG" src="..\Images\icons\instagram.svg" alt="Icones reseaux sociaux">@minkey</a></li>
+                        <li><a id="LinkedinText"  class="linkedin" href="https://www.linkedin.com/company/minkey-fr/" target="_blank"><img class="Reseaux" id="LinkedinIMG" src="..\Images\icons\linkedin.svg" alt="Icones reseaux sociaux">Minkey</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+            <p class="copy">&copy;2024 &#x2022; <a href="#"> &nbsp Minkey &nbsp </a> &#x2022; Tout droits réservés</p>
+        </footer>
+
+</body>
+</html>

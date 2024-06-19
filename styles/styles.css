@@ -3642,7 +3642,107 @@ input, select, .contact-submit {
 .Solution-mobile{
     display: none;
 }
-    
+
+/* Pages Mentions légales et */
+
+.Mentions-Legales{
+    background-color: var(--colorA);
+    color: var(--colorC);
+    padding: 5vh;
+    margin-top: 5vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 5vh;
+    border-radius: 15px;
+    box-shadow: 0 0 50px var(--colorA);
+}
+
+.Mentions-Legales h1{
+    font-size: var(--tailleH1);
+    color: var(--colorB);
+    font-family: "sansita", sans-serif;
+    font-weight: 700;
+    margin-bottom: 2vh;
+    text-align: center;
+}
+.Mentions-Legales h2{
+    font-size: var(--tailleH2);
+    color: var(--colorB);
+    font-family: "sansita", sans-serif;
+    font-weight: 700;
+    margin-bottom: 2vh;
+}
+.Mentions-Legales p{
+    font-size: var(--tailleP);
+    font-family: "Inter", sans-serif;
+    margin-bottom: 2vh;
+}
+
+.Mentions-CGV-CGU{
+    background-color: var(--colorA);
+    color: var(--colorC);
+    padding: 5vh;
+    margin-top: 5vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 5vh;
+    border-radius: 15px;
+    box-shadow: 0 0 50px var(--colorA);
+}
+
+.Mentions-CGV-CGU h1{
+    font-size: var(--tailleH1);
+    color: var(--colorB);
+    font-family: "sansita", sans-serif;
+    font-weight: 700;
+    margin-bottom: 2vh;
+    text-align: center;
+}
+.Mentions-CGV-CGU h2{
+    font-size: var(--tailleH2);
+    color: var(--colorB);
+    font-family: "sansita", sans-serif;
+    font-weight: 700;
+    margin-bottom: 2vh;
+}
+.Mentions-CGV-CGU p{
+    font-size: var(--tailleP);
+    font-family: "Inter", sans-serif;
+    margin-bottom: 2vh;
+}
+
+.Mentions-données{
+    background-color: var(--colorA);
+    color: var(--colorC);
+    padding: 5vh;
+    margin-top: 5vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 5vh;
+    border-radius: 15px;
+    box-shadow: 0 0 50px var(--colorA);
+}
+
+.Mentions-données h1{
+    font-size: var(--tailleH1);
+    color: var(--colorB);
+    font-family: "sansita", sans-serif;
+    font-weight: 700;
+    margin-bottom: 2vh;
+    text-align: center;
+}
+.Mentions-données h2{
+    font-size: var(--tailleH2);
+    color: var(--colorB);
+    font-family: "sansita", sans-serif;
+    font-weight: 700;
+    margin-bottom: 2vh;
+}
+.Mentions-données p{
+    font-size: var(--tailleP);
+    font-family: "Inter", sans-serif;
+    margin-bottom: 2vh;
+}
 /* Responsive Design */
 
 @media (max-width:1484px){
@@ -6772,7 +6872,6 @@ input, select, .contact-submit {
         margin: 15% auto; 
         margin-top: 20vh; 
         padding: 20px;
-        border: 1px solid #888;
         border-radius: 15px;
         width: 80%; 
         height: 60vh; 
