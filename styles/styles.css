@@ -6976,10 +6976,12 @@ input, select, .contact-submit {
 
     .Accroche-Container {
         margin-top: -80vh;
+        padding-right: 15px;
     }
 
     .Accroche {
         font-size: 38px;
+        padding-left: 15px;
     }
 
     .Accroche-texte{
@@ -7101,10 +7103,13 @@ input, select, .contact-submit {
 
     .Accroche-Container {
         margin-top: -95vh;
+        padding-right: 15px;
     }
 
     .Accroche {
-        font-size: 38px;
+        font-size: 32px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     .Accroche-texte{
