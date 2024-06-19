@@ -6942,6 +6942,29 @@ input, select, .contact-submit {
         font-size: 21px;
     }
 
+  
+
+    .content-wrapper{
+        font-size: 2rem;
+        padding: 0;
+        animation: move 7000ms linear infinite;
+        width: 220vw;
+    }
+
+
+    .Accroche-texte,
+    .Accroche-texte2,
+    .Accroche-texte3,
+    .accroche-Liste {
+        font-size: 1.2rem;
+    }
+
+    .button-Acrroche {
+        width: fit-content;
+        height: 45px;
+        padding: 10px 20px;
+        font-size: 18px;
+    }
     .text-wrapper{
         padding-top: 1vh;
         padding-bottom: 1vh;
@@ -6965,21 +6988,18 @@ input, select, .contact-submit {
 
     .Accroche {
         font-size: 38px;
-        padding-top: 15px;
     }
 
-    .Accroche-texte,
-    .Accroche-texte2,
-    .Accroche-texte3,
-    .accroche-Liste {
-        font-size: 1.2rem;
+    .Accroche-texte{
+        padding-left: 15px;
     }
 
-    .button-Acrroche {
-        width: fit-content;
-        height: 45px;
-        padding: 10px 20px;
-        font-size: 18px;
+    .Accroche-texte2,.Accroche-texte3{
+        padding-left: 15px;
+    }
+
+    .accroche-Liste{
+        padding-left: 15px;
     }
 
     .Carte1,
