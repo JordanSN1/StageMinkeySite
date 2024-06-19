@@ -5341,7 +5341,7 @@ input, select, .contact-submit {
     .CatchTextFooter {
         font-size: 14px;
         padding: 10px 10px;
-        padding-top: 25px;
+        padding-top: 45px;
     }
     .CatchTextFooter h2 {
         font-size: 28px;
@@ -5776,15 +5776,7 @@ input, select, .contact-submit {
     * {
         overflow-x: hidden;
     }
-    .CatchTextFooter {
-        font-size: 14px;
-        padding: 10px 10px;
-        padding-top: 25px;
-        text-decoration: none;
-    }
-    .CatchTextFooter h2 {
-        font-size: 28px;
-    }
+
 
     .logo-incub {
         width: 380px;
@@ -6901,7 +6893,7 @@ input, select, .contact-submit {
 
 
 
-@media (max-width:460px) {
+@media (max-width:480px) {
     .container-presentation {
         height: 65vh;
 
@@ -6979,7 +6971,7 @@ input, select, .contact-submit {
     }
 
     .Container-Minkey {
-        height: 170vh;
+        height: 180vh;
     }
 
     .Accroche-Container {
@@ -7009,21 +7001,21 @@ input, select, .contact-submit {
     }
 
     .Carte1 {
-        top: 170vh;
+        top: 175vh;
         right: 37vw;
         width: 57vw;
         height: 29vh;
     }
 
     .Carte2 {
-        top: 193vh;
+        top: 198vh;
         right: 7vw;
         width: 55vw;
         height: 29vh;
     }
 
     .Carte3 {
-        top: 221vh;
+        top: 226vh;
         right: 37vw;
         width: 55vw;
         height: 29vh;
