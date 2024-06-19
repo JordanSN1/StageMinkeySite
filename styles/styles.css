@@ -5342,6 +5342,8 @@ input, select, .contact-submit {
         font-size: 14px;
         padding: 10px 10px;
         padding-top: 45px;
+        padding-bottom: 25px;
+
     }
     .CatchTextFooter h2 {
         font-size: 28px;
@@ -7069,7 +7071,7 @@ input, select, .contact-submit {
     .bouton-GoSolution {
         top: 63vh;
         font-size: 1.2rem;
-        left: 38vw;
+        left: 32vw;
         height: 6vh;
     }
 
@@ -7154,14 +7156,14 @@ input, select, .contact-submit {
     }
 
     .Carte2 {
-        top: 198vh;
+        top: 200vh;
         right: 7vw;
         width: 55vw;
         height: 29vh;
     }
 
     .Carte3 {
-        top: 225vh;
+        top: 227vh;
         right: 37vw;
         width: 55vw;
         height: 29vh;
@@ -7180,6 +7182,16 @@ input, select, .contact-submit {
     .Carte-Texte3 {
         font-size: 1.25rem;
         margin-top: -4vh;
+    }
+
+    .Carte-Texte2 {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .Carte-Texte3 {
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
 @media (max-width: 420px){
