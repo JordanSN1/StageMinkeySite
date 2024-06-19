@@ -7315,4 +7315,12 @@ input, select, .contact-submit {
 }
 
 
+@media (max-width:360px) {
+    .globalPres-mobile{
+        background-color: #000  ;
+    }
+    
+}
+
+
     
