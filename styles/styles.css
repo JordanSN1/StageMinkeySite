@@ -6919,7 +6919,7 @@ input, select, .contact-submit {
 
     .titlePres {
         font-size: var(--tailleH1);
-        margin-top: 1vh;
+        margin-top: 3vh;
         margin-bottom: 5vh;
     }
 
@@ -6956,7 +6956,7 @@ input, select, .contact-submit {
     }
 
     .Container-Minkey {
-        height: 180vh;
+        height: 188vh;
     }
 
     .Accroche-Container {
