@@ -17,7 +17,7 @@
     --policeH3 : 'Inter', sans-serif;
     --police-content : 'Inter', sans-serif;
     --police-button : 'Inter', sans-serif;
-    --card-height: 40vw;
+    --card-height: 40vw
     --card-margin: 2vw;
     --card-top-offset: 5em;
     --numcards: 3;
@@ -3551,7 +3551,8 @@ input, select, .contact-submit {
 .Mentions-Legales{
     background-color: var(--colorA);
     color: var(--colorC);
-    padding: 5vh;
+    padding: 10vh;
+    padding-top: 5vh;
     margin-top: 5vh;
     margin-left: 5vw;
     margin-right: 5vw;
